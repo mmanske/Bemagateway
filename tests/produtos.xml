@@ -1,0 +1,42 @@
+<produtos>
+    <produto>
+        <idProduto>1</idProduto>
+        <descricao>Produto 1</descricao>
+    </produto>
+    <produto>
+        <idProduto>2</idProduto>
+        <descricao>Produto 2</descricao>
+    </produto>
+    <produto>
+        <idProduto>3</idProduto>
+        <descricao>Produto 3</descricao>
+    </produto>
+    <produto>
+        <idProduto>4</idProduto>
+        <descricao>Produto 4</descricao>
+    </produto>
+    <produto>
+        <idProduto>5</idProduto>
+        <descricao>Produto 5</descricao>
+    </produto>
+    <produto>
+        <idProduto>6</idProduto>
+        <descricao>Produto 6</descricao>
+    </produto>
+    <produto>
+        <idProduto>7</idProduto>
+        <descricao>Produto 7</descricao>
+    </produto>
+    <produto>
+        <idProduto>8</idProduto>
+        <descricao>Produto 8</descricao>
+    </produto>
+    <produto>
+        <idProduto>9</idProduto>
+        <descricao>Produto 9</descricao>
+    </produto>
+    <produto>
+        <idProduto>10</idProduto>
+        <descricao>Produto 10</descricao>
+    </produto>
+</produtos>

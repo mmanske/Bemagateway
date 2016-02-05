@@ -1,0 +1,70 @@
+{
+  "name": "BusinessContent",
+  "arrayPath": [
+    "BusinessContent"
+  ],
+  "childNodes": [
+    {
+      "name": "InternalId",
+      "arrayPath": [],
+      "nodeValue": {
+        "json": [
+          "InternalId"
+        ]
+      }
+    },
+    {
+      "name": "CompanyInternalId",
+      "arrayPath": [],
+      "nodeValue": {
+        "json": [
+          "CompanyInternalId"
+        ]
+      }
+    },
+    {
+      "name": "ListOfCoupons",
+      "arrayPath": ["ListOfCoupons"],
+      "childNodes": [
+        {
+          "arrayItems": true,
+          "name": "Coupon",
+          "arrayPath": [],
+          "childNodes": [
+            {
+              "name": "CouponInternalId",
+              "arrayPath": [],
+              "nodeValue": {
+                "json": [
+                  "CouponInternalId"
+                ]
+              }
+            },
+            {
+              "name": "DateOfPayment",
+              "arrayPath": [],
+              "nodeValue": {
+                "json": [
+                  "DateOfPayment"
+                ]
+              }
+            },
+            {
+              "name": "PaymentValue",
+              "arrayPath": [],
+              "nodeValue": {
+                "json": [
+                  "PaymentValue"
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    }
+
+
+  ]
+
+
+}

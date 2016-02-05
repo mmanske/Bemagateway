@@ -1,0 +1,460 @@
+{
+  "name": "BusinessContent",
+  "arrayPath": [
+    "BusinessContent"
+  ],
+  "childNodes": [
+    {
+      "name": "InternalId",
+      "arrayPath": [],
+      "nodeValue": {
+        "json": [
+          "InternalId"
+        ]
+      }
+    },
+    {
+      "name": "CompanyId",
+      "arrayPath": [],
+      "nodeValue": {
+        "json": [
+          "CompanyId"
+        ]
+      }
+    },
+    {
+      "name": "BranchId",
+      "arrayPath": [],
+      "nodeValue": {
+        "json": [
+          "BranchId"
+        ]
+      }
+    },
+    {
+      "name": "CompanyInternalId",
+      "arrayPath": [],
+      "nodeValue": {
+        "json": [
+          "CompanyInternalId"
+        ]
+      }
+    },
+    {
+      "name": "DocumentPrefix",
+      "arrayPath": [],
+      "nodeValue": {
+        "json": [
+          "DocumentPrefix"
+        ]
+      }
+    },
+    {
+      "name": "DocumentNumber",
+      "arrayPath": [],
+      "nodeValue": {
+        "json": [
+          "DocumentNumber"
+        ]
+      }
+    },
+    {
+      "name": "DocumentParcel",
+      "arrayPath": [],
+      "nodeValue": {
+        "json": [
+          "DocumentParcel"
+        ]
+      }
+    },
+    {
+      "name": "DocumentTypeCode",
+      "arrayPath": [],
+      "nodeValue": {
+        "json": [
+          "DocumentTypeCode"
+        ]
+      }
+    },
+    {
+      "name": "ListOfSourceDocument",
+      "arrayPath": [],
+      "nodeValue": {
+        "json": [
+          "ListOfSourceDocument"
+        ]
+      }
+    },
+    {
+      "name": "IssueDate",
+      "arrayPath": [],
+      "nodeValue": {
+        "json": [
+          "IssueDate"
+        ]
+      }
+    },
+    {
+      "name": "DueDate",
+      "arrayPath": [],
+      "nodeValue": {
+        "json": [
+          "DueDate"
+        ]
+      }
+    },
+    {
+      "name": "RealDueDate",
+      "arrayPath": [],
+      "nodeValue": {
+        "json": [
+          "RealDueDate"
+        ]
+      }
+    },
+    {
+      "name": "CustomerCode",
+      "arrayPath": [],
+      "nodeValue": {
+        "json": [
+          "CustomerCode"
+        ]
+      }
+    },
+    {
+      "name": "StoreId",
+      "arrayPath": [],
+      "nodeValue": {
+        "json": [
+          "StoreId"
+        ]
+      }
+    },
+    {
+      "name": "CustomerInternalId",
+      "arrayPath": [],
+      "nodeValue": {
+        "json": [
+          "CustomerInternalId"
+        ]
+      }
+    },
+    {
+      "name": "NetValue",
+      "arrayPath": [],
+      "nodeValue": {
+        "json": [
+          "NetValue"
+        ]
+      }
+    },
+    {
+      "name": "GrossValue",
+      "arrayPath": [],
+      "nodeValue": {
+        "json": [
+          "GrossValue"
+        ]
+      }
+    },
+    {
+      "name": "RealValue",
+      "arrayPath": [],
+      "nodeValue": {
+        "json": [
+          "RealValue"
+        ]
+      }
+    },
+    {
+      "name": "CurrencyCode",
+      "arrayPath": [],
+      "nodeValue": {
+        "json": [
+          "CurrencyCode"
+        ]
+      }
+    },
+    {
+      "name": "CurrencyInternalId",
+      "arrayPath": [],
+      "nodeValue": {
+        "json": [
+          "CurrencyInternalId"
+        ]
+      }
+    },
+    {
+      "name": "CurrencyRate",
+      "arrayPath": [],
+      "nodeValue": {
+        "json": [
+          "CurrencyRate"
+        ]
+      }
+    },
+    {
+      "name": "FinancialNatureInternalId",
+      "arrayPath": [],
+      "nodeValue": {
+        "json": [
+          "FinancialNatureInternalId"
+        ]
+      }
+    },
+    {
+      "name": "Taxes",
+      "arrayPath": [],
+      "nodeValue": {
+        "json": [
+          "Taxes"
+        ]
+      }
+    },
+    {
+      "name": "Observation",
+      "arrayPath": [],
+      "nodeValue": {
+        "json": [
+          "Observation"
+        ]
+      }
+    },
+    {
+      "name": "Origin",
+      "arrayPath": [],
+      "nodeValue": {
+        "json": [
+          "Origin"
+        ]
+      }
+    },
+    {
+      "name": "AgencyNumber",
+      "arrayPath": [],
+      "nodeValue": {
+        "json": [
+          "AgencyNumber"
+        ]
+      }
+    },
+    {
+      "name": "AccountNumber",
+      "arrayPath": [],
+      "nodeValue": {
+        "json": [
+          "AccountNumber"
+        ]
+      }
+    },
+    {
+      "name": "OurNumberBanking",
+      "arrayPath": [],
+      "nodeValue": {
+        "json": [
+          "OurNumberBanking"
+        ]
+      }
+    },
+    {
+      "name": "ContractNumber",
+      "arrayPath": [],
+      "nodeValue": {
+        "json": [
+          "ContractNumber"
+        ]
+      }
+    },
+    {
+      "name": "InterestPercentage",
+      "arrayPath": [],
+      "nodeValue": {
+        "json": [
+          "InterestPercentage"
+        ]
+      }
+    },
+    {
+      "name": "AssessmentValue",
+      "arrayPath": [],
+      "nodeValue": {
+        "json": [
+          "AssessmentValue"
+        ]
+      }
+    },
+    {
+      "name": "HolderCode",
+      "arrayPath": [],
+      "nodeValue": {
+        "json": [
+          "HolderCode"
+        ]
+      }
+    },
+    {
+      "name": "UniqueSerialNumber",
+      "arrayPath": [],
+      "nodeValue": {
+        "json": [
+          "UniqueSerialNumber"
+        ]
+      }
+    },
+    {
+      "name": "Accounting",
+      "arrayPath": [],
+      "childNodes": [
+        {
+          "name": "AccountingCodeDebit",
+          "arrayPath": [],
+          "nodeValue": {
+            "json": [
+              "Accounting",
+              "AccountingCodeDebit"
+            ]
+          }
+        },
+        {
+          "name": "AccountingCodeCredit",
+          "arrayPath": [],
+          "nodeValue": {
+            "json": [
+              "Accounting",
+              "AccountingCodeCredit"
+            ]
+          }
+        },
+        {
+          "name": "CostCenterDebit",
+          "arrayPath": [],
+          "nodeValue": {
+            "json": [
+              "Accounting",
+              "CostCenterDebit"
+            ]
+          }
+        },
+        {
+          "name": "CostCenterCredit",
+          "arrayPath": [],
+          "nodeValue": {
+            "json": [
+              "Accounting",
+              "CostCenterCredit"
+            ]
+          }
+        },
+        {
+          "name": "DepartamentDebit",
+          "arrayPath": [],
+          "nodeValue": {
+            "json": [
+              "Accounting",
+              "DepartamentDebit"
+            ]
+          }
+        },
+        {
+          "name": "DepartamentCredit",
+          "arrayPath": [],
+          "nodeValue": {
+            "json": [
+              "Accounting",
+              "DepartamentCredit"
+            ]
+          }
+        },
+        {
+          "name": "ClassValueDebit",
+          "arrayPath": [],
+          "nodeValue": {
+            "json": [
+              "Accounting",
+              "ClassValueDebit"
+            ]
+          }
+        },
+        {
+          "name": "ClassValueCredit",
+          "arrayPath": [],
+          "nodeValue": {
+            "json": [
+              "Accounting",
+              "ClassValueCredit"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "Other",
+      "arrayPath": [],
+      "childNodes": [
+
+        {
+          "name": "AcademicRecord",
+          "arrayPath": [],
+          "nodeValue": {
+            "json": [
+              "Other",
+              "AcademicRecord"
+            ]
+          }
+        },
+        {
+          "name": "AcademicPeriod",
+          "arrayPath": [],
+          "nodeValue": {
+            "json": [
+              "Other",
+              "AcademicPeriod"
+            ]
+          }
+        },
+        {
+          "name": "AppliedMatrix",
+          "arrayPath": [],
+          "nodeValue": {
+            "json": [
+              "Other",
+              "AppliedMatrix"
+            ]
+          }
+        },
+        {
+          "name": "ItemInternalId",
+          "arrayPath": [],
+          "nodeValue": {
+            "json": [
+              "Other",
+              "ItemInternalId"
+            ]
+          }
+        },
+        {
+          "name": "Class",
+          "arrayPath": [],
+          "nodeValue": {
+            "json": [
+              "Other",
+              "Class"
+            ]
+          }
+        },
+        {
+          "name": "HotelAccountCode",
+          "arrayPath": [],
+          "nodeValue": {
+            "json": [
+              "Other",
+              "HotelAccountCode"
+            ]
+          }
+        }
+      ]
+    }
+
+  ]
+}
+

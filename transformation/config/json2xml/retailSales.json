@@ -1,0 +1,368 @@
+{
+  "name": "BusinessContent",
+  "arrayPath": [
+    "BusinessContent"
+  ],
+  "childNodes": [
+    {
+      "name": "InternalId",
+      "arrayPath": [],
+      "nodeValue": {
+        "json": [
+          "InternalId"
+        ]
+      }
+    },
+    {
+      "name": "CompanyId",
+      "arrayPath": [],
+      "nodeValue": {
+        "json": [
+          "CompanyId"
+        ]
+      }
+    },
+    {
+      "name": "BranchId",
+      "arrayPath": [],
+      "nodeValue": {
+        "json": [
+          "BranchId"
+        ]
+      }
+    },{
+      "name": "DocumentCode",
+      "arrayPath": [],
+      "nodeValue": {
+        "json": [
+          "DocumentCode"
+        ]
+      }
+    },{
+      "name": "SerieId",
+      "arrayPath": [],
+      "nodeValue": {
+        "json": [
+          "SerieId"
+        ]
+      }
+    },{
+      "name": "CustomerVendorInternalId",
+      "arrayPath": [],
+      "nodeValue": {
+        "json": [
+          "CustomerVendorInternalId"
+        ]
+      }
+    },{
+      "name": "OperatorCode",
+      "arrayPath": [],
+      "nodeValue": {
+        "json": [
+          "OperatorCode"
+        ]
+      }
+    },{
+      "name": "StationCode",
+      "arrayPath": [],
+      "nodeValue": {
+        "json": [
+          "StationCode"
+        ]
+      }
+    },{
+      "name": "IssueDateDocument",
+      "arrayPath": [],
+      "nodeValue": {
+        "json": [
+          "IssueDateDocument"
+        ]
+      }
+    },{
+      "name": "PersonalIdentification",
+      "arrayPath": [],
+      "nodeValue": {
+        "json": [
+          "PersonalIdentification"
+        ]
+      }
+    },{
+      "name": "TotalPrice",
+      "arrayPath": [],
+      "nodeValue": {
+        "json": [
+          "TotalPrice"
+        ]
+      }
+    },{
+      "name": "GrossPrice",
+      "arrayPath": [],
+      "nodeValue": {
+        "json": [
+          "GrossPrice"
+        ]
+      }
+    },{
+      "name": "DiscountValue",
+      "arrayPath": [],
+      "nodeValue": {
+        "json": [
+          "DiscountValue"
+        ]
+      }
+    },{
+      "name": "DiscountPercent",
+      "arrayPath": [],
+      "nodeValue": {
+        "json": [
+          "DiscountPercent"
+        ]
+      }
+    },{
+      "name": "NetPrice",
+      "arrayPath": [],
+      "nodeValue": {
+        "json": [
+          "NetPrice"
+        ]
+      }
+    },{
+      "name": "Change",
+      "arrayPath": [],
+      "nodeValue": {
+        "json": [
+          "Change"
+        ]
+      }
+    },
+
+
+    {
+      "name": "ListOfTaxes",
+      "arrayPath": ["ListOfTaxes"],
+      "childNodes": [
+        {
+          "arrayItems": true,
+          "name": "Tax",
+          "arrayPath": [],
+          "childNodes": [
+            {
+              "name": "Taxe",
+              "arrayPath": [],
+              "nodeValue": {
+                "json": [
+                  "Taxe"
+                ]
+              }
+            },
+            {
+              "name": "CalculationBasis",
+              "arrayPath": [],
+              "nodeValue": {
+                "json": [
+                  "CalculationBasis"
+                ]
+              }
+            },
+            {
+              "name": "Value",
+              "arrayPath": [],
+              "nodeValue": {
+                "json": [
+                  "Value"
+                ]
+              }
+            }
+          ]
+        }
+      ]
+
+    },
+    {
+      "name": "ListOfSaleItem",
+      "arrayPath": ["ListOfSaleItem"],
+      "childNodes": [
+        {
+          "arrayItems": true,
+          "name": "SaleItem",
+          "arrayPath": [],
+          "childNodes": [
+            {
+              "name": "ItemInternalId",
+              "arrayPath": [],
+              "nodeValue": {
+                "json": [
+                  "ItemInternalId"
+                ]
+              }
+            },
+            {
+              "name": "ItemOrder",
+              "arrayPath": [],
+              "nodeValue": {
+                "json": [
+                  "ItemOrder"
+                ]
+              }
+            },
+            {
+              "name": "OperationCode",
+              "arrayPath": [],
+              "nodeValue": {
+                "json": [
+                  "OperationCode"
+                ]
+              }
+            },
+            {
+              "name": "Quantity",
+              "arrayPath": [],
+              "nodeValue": {
+                "json": [
+                  "Quantity"
+                ]
+              }
+            },
+            {
+              "name": "UnitPrice",
+              "arrayPath": [],
+              "nodeValue": {
+                "json": [
+                  "UnitPrice"
+                ]
+              }
+            },
+            {
+              "name": "ItemPrice",
+              "arrayPath": [],
+              "nodeValue": {
+                "json": [
+                  "ItemPrice"
+                ]
+              }
+            },
+            {
+              "name": "DiscountPercentage",
+              "arrayPath": [],
+              "nodeValue": {
+                "json": [
+                  "DiscountPercentage"
+                ]
+              }
+            },
+            {
+              "name": "DiscountAmount",
+              "arrayPath": [],
+              "nodeValue": {
+                "json": [
+                  "DiscountAmount"
+                ]
+              }
+            },
+            {
+              "name": "Increase",
+              "arrayPath": [],
+              "nodeValue": {
+                "json": [
+                  "Increase"
+                ]
+              }
+            },
+            {
+              "name": "ListOfTaxes",
+              "arrayPath": ["SaleItem", "ListOfTaxes"],
+              "childNodes": [
+                {
+                  "arrayItems": true,
+                  "name": "Tax",
+                  "arrayPath": [],
+                  "childNodes": [
+                    {
+                      "name": "Taxe",
+                      "arrayPath": [],
+                      "nodeValue": {
+                        "json": [
+                          "Taxe"
+                        ]
+                      }
+                    },
+                    {
+                      "name": "CalculationBasis",
+                      "arrayPath": [],
+                      "nodeValue": {
+                        "json": [
+                          "CalculationBasis"
+                        ]
+                      }
+                    },
+                    {
+                      "name": "Value",
+                      "arrayPath": [],
+                      "nodeValue": {
+                        "json": [
+                          "Value"
+                        ]
+                      }
+                    }
+                  ]
+                }
+              ]
+
+            }
+
+
+
+
+
+
+          ]
+        }
+      ]
+
+    },
+    {
+      "name": "ListOfSaleCondition",
+      "arrayPath": ["ListOfSaleCondition"],
+      "childNodes": [
+        {
+          "arrayItems": true,
+          "name": "SaleCondition",
+          "arrayPath": [],
+          "childNodes": [
+            {
+              "name": "PaymentMethodCode",
+              "arrayPath": [],
+              "nodeValue": {
+                "json": [
+                  "PaymentMethodCode"
+                ]
+              }
+            },
+            {
+              "name": "DateOfPayment",
+              "arrayPath": [],
+              "nodeValue": {
+                "json": [
+                  "DateOfPayment"
+                ]
+              }
+            },
+            {
+              "name": "PaymentValue",
+              "arrayPath": [],
+              "nodeValue": {
+                "json": [
+                  "PaymentValue"
+                ]
+              }
+            }
+          ]
+        }
+      ]
+
+    }
+
+
+  ]
+}
+

@@ -1,0 +1,318 @@
+{
+  "name": "BusinessContent",
+  "arrayPath": [
+    "BusinessContent"
+  ],
+  "childNodes": [
+
+    {
+      "name": "CompanyId",
+      "arrayPath": [],
+      "nodeValue": {
+        "json": [
+          "CompanyId"
+        ]
+      }
+    },
+    {
+      "name": "BranchId",
+      "arrayPath": [],
+      "nodeValue": {
+        "json": [
+          "BranchId"
+        ]
+      }
+    },
+    {
+      "name": "CompanyInternalId",
+      "arrayPath": [],
+      "nodeValue": {
+        "json": [
+          "CompanyInternalId"
+        ]
+      }
+    },
+    {
+      "name": "InternalId",
+      "arrayPath": [],
+      "nodeValue": {
+        "json": [
+          "InternalId"
+        ]
+      }
+    },
+
+    {
+      "name": "Code",
+      "arrayPath": [],
+      "nodeValue": {
+        "json": [
+          "Code"
+        ]
+      }
+    },
+    {
+      "name": "OperIndicator",
+      "arrayPath": [],
+      "nodeValue": {
+        "json": [
+          "OperIndicator"
+        ]
+      }
+    },
+    {
+      "name": "Regime",
+      "arrayPath": [],
+      "nodeValue": {
+        "json": [
+          "Regime"
+        ]
+      }
+    },
+    {
+      "name": "OperDate",
+      "arrayPath": [],
+      "nodeValue": {
+        "json": [
+          "OperDate"
+        ]
+      }
+    },
+    {
+      "name": "PisTax",
+      "arrayPath": [],
+      "nodeValue": {
+        "json": [
+          "PisTax"
+        ]
+      }
+    },
+    {
+      "name": "CofinsTax",
+      "arrayPath": [],
+      "nodeValue": {
+        "json": [
+          "CofinsTax"
+        ]
+      }
+    },
+    {
+      "name": "CustomerVendorInternalId",
+      "arrayPath": [],
+      "nodeValue": {
+        "json": [
+          "CustomerVendorInternalId"
+        ]
+      }
+    },
+    {
+      "name": "CustomerVendorCode",
+      "arrayPath": [],
+      "nodeValue": {
+        "json": [
+          "CustomerVendorCode"
+        ]
+      }
+    },
+    {
+      "name": "ItemInternalId",
+      "arrayPath": [],
+      "nodeValue": {
+        "json": [
+          "ItemInternalId"
+        ]
+      }
+    },
+    {
+      "name": "ItemCode",
+      "arrayPath": [],
+      "nodeValue": {
+        "json": [
+          "ItemCode"
+        ]
+      }
+    },
+    {
+      "name": "OperValue",
+      "arrayPath": [],
+      "nodeValue": {
+        "json": [
+          "OperValue"
+        ]
+      }
+    },
+    {
+      "name": "Balance",
+      "arrayPath": [],
+      "nodeValue": {
+        "json": [
+          "Balance"
+        ]
+      }
+    },
+    {
+      "name": "PisBase",
+      "arrayPath": [],
+      "nodeValue": {
+        "json": [
+          "PisBase"
+        ]
+      }
+    },
+    {
+      "name": "PisAliquot",
+      "arrayPath": [],
+      "nodeValue": {
+        "json": [
+          "PisAliquot"
+        ]
+      }
+    },
+    {
+      "name": "PisValue",
+      "arrayPath": [],
+      "nodeValue": {
+        "json": [
+          "PisValue"
+        ]
+      }
+    },
+    {
+      "name": "CofinsBase",
+      "arrayPath": [],
+      "nodeValue": {
+        "json": [
+          "CofinsBase"
+        ]
+      }
+    },
+    {
+      "name": "CofinsAliquot",
+      "arrayPath": [],
+      "nodeValue": {
+        "json": [
+          "CofinsAliquot"
+        ]
+      }
+    },
+    {
+      "name": "CofinsValue",
+      "arrayPath": [],
+      "nodeValue": {
+        "json": [
+          "CofinsValue"
+        ]
+      }
+    },
+    {
+      "name": "BCCode",
+      "arrayPath": [],
+      "nodeValue": {
+        "json": [
+          "BCCode"
+        ]
+      }
+    },
+    {
+      "name": "CredOrigin",
+      "arrayPath": [],
+      "nodeValue": {
+        "json": [
+          "CredOrigin"
+        ]
+      }
+    },
+    {
+      "name": "LedgerAccountInternalId",
+      "arrayPath": [],
+      "nodeValue": {
+        "json": [
+          "LedgerAccountInternalId"
+        ]
+      }
+    },
+    {
+      "name": "LedgerAccount",
+      "arrayPath": [],
+      "nodeValue": {
+        "json": [
+          "LedgerAccount"
+        ]
+      }
+    },
+    {
+      "name": "CostCenterInternalId",
+      "arrayPath": [],
+      "nodeValue": {
+        "json": [
+          "CostCenterInternalId"
+        ]
+      }
+    },
+    {
+      "name": "CostCenterCode",
+      "arrayPath": [],
+      "nodeValue": {
+        "json": [
+          "CostCenterCode"
+        ]
+      }
+    },
+    {
+      "name": "OperDescription",
+      "arrayPath": [],
+      "nodeValue": {
+        "json": [
+          "OperDescription"
+        ]
+      }
+    },
+    {
+      "name": "ClTable",
+      "arrayPath": [],
+      "nodeValue": {
+        "json": [
+          "ClTable"
+        ]
+      }
+    },
+    {
+      "name": "Calculate",
+      "arrayPath": [],
+      "nodeValue": {
+        "json": [
+          "Calculate"
+        ]
+      }
+    },
+    {
+      "name": "EfdProject",
+      "arrayPath": [],
+      "nodeValue": {
+        "json": [
+          "EfdProject"
+        ]
+      }
+    },
+    {
+      "name": "GrossIncome",
+      "arrayPath": [],
+      "nodeValue": {
+        "json": [
+          "GrossIncome"
+        ]
+      }
+    },
+    {
+      "name": "Participator",
+      "arrayPath": [],
+      "nodeValue": {
+        "json": [
+          "Participator"
+        ]
+      }
+    }
+
+
+  ]
+}

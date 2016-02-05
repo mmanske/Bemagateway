@@ -1,0 +1,111 @@
+[
+  {
+    "endpointType": "REST",
+    "mappings": [
+      {
+        "description": "",
+        "endpoint": "/v1/accountReceivableDocument",
+        "method": "POST",
+        "queue": "default",
+        "type": "static",
+        "transformationToXML": "accountReceivableDocument.json",
+        "wsdlRedirect": "http://187.94.63.66:8080/EAISERVICE.apw?wsdl",
+        "redirectType": "SOAP",
+        "parameters": {"INMSG": "POST_BODY"},
+        "soapMethod": "RECEIVEMESSAGE",
+        "returnMethod": "RECEIVEMESSAGERESULT"
+      },
+      {
+        "description": "",
+        "endpoint": "/v1/accountReceivableDocumentDischarge",
+        "method": "POST",
+        "queue": "default",
+        "type": "static",
+        "transformationToXML": "accountReceivableDocumentDischarge.json",
+        "wsdlRedirect": "http://187.94.63.66:8080/EAISERVICE.apw?wsdl",
+        "redirectType": "SOAP",
+        "parameters": {"INMSG": "POST_BODY"},
+        "soapMethod": "RECEIVEMESSAGE",
+        "returnMethod": "RECEIVEMESSAGERESULT"
+      },
+      {
+        "description": "",
+        "endpoint": "/v1/customerVendor",
+        "method": "POST",
+        "queue": "default",
+        "type": "static",
+        "transformationToXML": "customerVendor.json",
+        "wsdlRedirect": "http://187.94.63.66:8080/EAISERVICE.apw?wsdl",
+        "redirectType": "SOAP",
+        "parameters": {"INMSG": "POST_BODY"},
+        "soapMethod": "RECEIVEMESSAGE",
+        "returnMethod": "RECEIVEMESSAGERESULT"
+      },
+      {
+        "description": "",
+        "endpoint": "/v1/documentOnCoupon",
+        "method": "POST",
+        "queue": "default",
+        "type": "static",
+        "transformationToXML": "documentOnCoupon.json",
+        "wsdlRedirect": "http://187.94.63.66:8080/EAISERVICE.apw?wsdl",
+        "redirectType": "SOAP",
+        "parameters": {"INMSG": "POST_BODY"},
+        "soapMethod": "RECEIVEMESSAGE",
+        "returnMethod": "RECEIVEMESSAGERESULT"
+      },
+      {
+        "description": "",
+        "endpoint": "/v1/item",
+        "method": "POST",
+        "queue": "default",
+        "type": "static",
+        "transformationToXML": "item.json",
+        "wsdlRedirect": "http://187.94.63.66:8080/EAISERVICE.apw?wsdl",
+        "redirectType": "SOAP",
+        "parameters": {"INMSG": "POST_BODY"},
+        "soapMethod": "RECEIVEMESSAGE",
+        "returnMethod": "RECEIVEMESSAGERESULT"
+      },
+      {
+        "description": "",
+        "endpoint": "/v1/otherDocumentsF100",
+        "method": "POST",
+        "queue": "default",
+        "type": "static",
+        "transformationToXML": "otherDocumentsF100.json",
+        "wsdlRedirect": "http://187.94.63.66:8080/EAISERVICE.apw?wsdl",
+        "redirectType": "SOAP",
+        "parameters": {"INMSG": "POST_BODY"},
+        "soapMethod": "RECEIVEMESSAGE",
+        "returnMethod": "RECEIVEMESSAGERESULT"
+      },
+      {
+        "description": "",
+        "endpoint": "/v1/retailSalesCancellation",
+        "method": "POST",
+        "queue": "default",
+        "type": "static",
+        "transformationToXML": "retailSalesCancellation.json",
+        "wsdlRedirect": "http://187.94.63.66:8080/EAISERVICE.apw?wsdl",
+        "redirectType": "SOAP",
+        "parameters": {"INMSG": "POST_BODY"},
+        "soapMethod": "RECEIVEMESSAGE",
+        "returnMethod": "RECEIVEMESSAGERESULT"
+      },
+      {
+        "description": "",
+        "endpoint": "/v1/seller",
+        "method": "POST",
+        "queue": "default",
+        "type": "static",
+        "transformationToXML": "seller.json",
+        "wsdlRedirect": "http://187.94.63.66:8080/EAISERVICE.apw?wsdl",
+        "redirectType": "SOAP",
+        "parameters": {"INMSG": "POST_BODY"},
+        "soapMethod": "RECEIVEMESSAGE",
+        "returnMethod": "RECEIVEMESSAGERESULT"
+      }
+    ]
+  }
+]

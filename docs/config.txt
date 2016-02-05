@@ -1,0 +1,226 @@
+Documentação de Configuração do Bematech API Gateway
+
+1) Roteamentos suportados :
+
+       WS REST/JSON -> WS SOAP/XML
+       WS SOAP/JSON -> WS SOAP/XML
+       
+
+2) Configurações de aplicação (/config):
+
+	2.1) AppConfig.json
+			Arquivo que contém algumas definições gerais da aplicação:
+				webServiceListenPort -> Porta de escuta para serviços SOAP/XML
+				
+	2.2) localDBConfig.json
+			Arquivo que contém as especificações para o banco de dados local da aplicação. Em caso de não existir o arquivo, os seguintes 
+			padrões serão aplicados: 
+				  host: "localhost",
+				  name: "bemagateway",
+				  user: "bematech",
+				  password: "bematech",
+				  port": "5432"
+				  
+	2.3) queue.json
+			Arquivo que identifica as filas utilizadas pela aplicação. Será criado um processo para cada fila e suas 
+			requisições serão executadas conforme a ordem de chegada
+			
+			
+3) Configurações de mapeamentos de API's
+
+	3.1) mapping.json (/server/boot/mapping.json)
+			Arquivo que contém a lista de grupos de API's a serem expostas pela aplicação
+			
+	3.2) API's (/server/boot/apis/...)
+			Diretório que contém os grupos de API's a serem expostos pela aplicação
+			
+			3.2.1) Exemplo de Configurações de API's REST e SOAP
+				Arquivo: /server/boot/apis/produto.json
+				
+				3.2.1.1) REST -> SOAP
+				{
+				  "endpointType": "REST", -> Significa que a API de requisição é do tipo REST/JSON
+				  "mappings": [           -> Lista de Métodos suportados pela API
+					  {
+						"description": "Listar produtos",
+						"endpoint": "/api/produto",         			-> Path da API
+						"method": "GET", 								-> Tipo do Método (GET, PUT, POST, DELETE)
+						"queue": "default",								-> Fila que atenderá as requisições
+						"type": "static",								-> Atributo não utilizado no momento
+						"transformationToJSON": "produto.json",			-> Arquivo de configuração para transformações
+																			de XML p/ JSON
+						"wsdlRedirect": "http://localhost:8080/wsTesteGateway/services/ProductsService?wsdl",
+																		-> Caminho do WSDL do serviço a ser
+																			redirecionado
+						"redirectType": "SOAP",							-> Tipo do serviço redirecionado (REST / SOAP)
+						"parameters": {},								-> Mapeamento dos Parâmetros do Serviço REST p/ SOAP
+						"soapMethod": "getProducts",					-> Método SOAP a ser invocado
+						"returnMethod": "getProductsReturn"				-> Nome do método SOAP de retorno
+
+					  },
+					  {
+						"description": "Localizar produto pelo ID",
+						"endpoint": "/api/produto/:id",
+						"method": "GET",
+						"queue": "default",
+						"type": "static",
+						"transformationToXML": "produto.json",
+						"wsdlRedirect": "http://localhost:8080/wsTesteGateway/services/ProductsService?wsdl",
+						"redirectType": "SOAP",
+						"parameters": {"productID": "id"},				-> Nesse caso, o serviço SOAP possui parâmetros.
+																			Os parâmetros deverão ser relacionados da 
+																			seguinte forma:
+																			{"nome do parâmetro do WS SOAP": "nome do parâmetro do WS REST"};
+																			Cada correlação de parâmetros será um atributo do objeto "parameters"
+						"soapMethod": "getProduct",
+						"returnMethod": "getProductReturn"
+					  },
+					  {
+						"description": "Gravar Produto",
+						"endpoint": "/api/produto",
+						"method": "POST",
+						"queue": "default",
+						"type": "static",
+						"transformationToXML": "produto.json",			-> Nesse caso, teremos envolvido transformações de JSON / XML
+																			e XML p/ JSON
+						"transformationToJSON": "produto.json",
+						"wsdlRedirect": "http://localhost:8080/wsTesteGateway/services/ProductsService?wsdl",
+						"redirectType": "SOAP",
+						"parameters": {"xml": "POST_BODY"},				-> Para métodos POST, o post body será identificado com a palavra reservada 
+																			"POST_BODY" para correlação com os parâmetros SOAP. Só poderá haver um 
+																			correlacionamento com POST_BODY
+						"soapMethod": "saveProduct",
+						"returnMethod": "saveProductReturn"
+
+					  }
+					]
+				}
+				
+				3.2.1.2) SOAP -> REST
+				
+				{
+					"endpointType": "SOAP", 							-> Significa que a API de requisição é do tipo SOAP/XML
+					 "mappings": [
+						 {
+							 "description": "Atualiza Produtos",
+							 "wsdl": "ProductsService.wsdl",			-> Nome do Arquivo WSDL que conterá as definições do WS
+							 "endPoint": "/bemagw/api/ProductsService",	-> Path do WS
+							 "serviceName": "ProductsServiceService",	-> Nome do serviço dentro do WSDL
+							 "portName": "ProductsService",				-> Nome da Porta do Serviço dentro do WSDL
+							 "redirectType": "REST",					
+							 "operations": [							-> Lista que contém os métodos do WS SOAP
+								 {
+									"requestTimeout": 10000,			-> Timeout em milis do request do método ( colocar 0 se for infinito)
+									"responseTimeout": 10000,			-> Timeout em milis do response do método ( colocar 0 se for infinito) 
+									"operation": "getProduct",			-> Nome do método a ser exposto
+									"queue": "default",					
+									"synchronous": false,				-> Parâmetro não utilizado no momento. Manter como false
+									"urlRedirect": "http://localhost:8080/restTesteGW/rest/product/${productID}",
+																		-> URL do Serviço REST a ser direcionado. Cada parâmetro do path deverá estar 
+																			no formato ${nome do parâmetro}
+									"parameters": {"productID": "productID"}, 
+																		-> Mapeamento entre os parâmetros do Serviço SOAP -> REST
+									"method": "GET",
+									"transformationToXML": "produto.json"
+								 },
+								 {
+								   "requestTimeout": 10000,
+								   "responseTimeout": 10000,
+								   "operation": "getProducts",
+								   "queue": "default",
+								   "synchronous": false,
+								   "urlRedirect": "http://localhost:8080/restTesteGW/rest/product",
+								   "parameters": {},
+								   "method": "GET",
+								   "transformationToXML": "produtos.json",
+								   "transformationToJSON": "produto.json"
+								 },
+								{
+								  "requestTimeout": 10000,
+								  "responseTimeout": 10000,
+								  "operation": "saveProduct",
+								  "queue": "default",
+								  "synchronous": false,
+								  "urlRedirect": "http://localhost:8080/restTesteGW/rest/product",
+								  "parameters": {},
+								  "method": "POST",
+								  "transformationToXML": "produto.json",
+								  "transformationToJSON": "produto.json",
+								  "parameters": {"POST_BODY": "xml"} 	-> Neste caso, o parâmetro "xml" do WS SOAP será o post body do método
+								  											rest a ser direcionado 
+								}
+							 ]
+						 }
+					 ]
+					}
+					
+4) Configurações de transformações entre XML -> JSON e JSON -> XML
+
+	4.1) Transformações JSON -> XML (/transformation/config/json2xml)
+	
+			4.1.1) common_config.json (/transformation/config/json2xml/common_config.json)
+					Arquivo que contém as configurações comuns a todas transformações das mensagens entre Hotal e Protheus
+					
+			4.2.2) Arquivos específicos para cada mensagem trocada 
+
+	4.2) Transformações XML -> XML (/transformation/config/xml2json)
+	
+			4.1.1) common_config.json (/transformation/config/xml2json/common_config.json)
+					Arquivo que contém as configurações comuns a todas transformações das mensagens entre Hotal e Protheus
+					
+			4.2.2) Arquivos específicos para cada mensagem trocada 
+			
+			
+			
+5) Estrutura das classes da aplicação
+
+/client/mapping-config.js -> carrega a lista contendo os descritores dos mapeamentos das API's;
+/client/ResponseObserver.js -> Objeto responsável por monitorar a fila de responses de cada serviço redirecionado e sinalizar ao requisitor da chegada
+								das mesmas;
+/client/RestConsumer.js -> classe que encapsula uma chamada de redirecionamento REST/JSON
+/client/SoapConsumer.js -> classe que encapsula uma chamada	de redirecionamento SOAP/XML
+
+/connection/Connection.js -> classe que encapsula os acessos ao banco de dados local da aplicação
+							
+/processor/QueueProcessor.js -> classe que encapsula todos os acessos às filas persistentes (banco de dados local)
+/processor/RequestProcessor.js -> classe responsável por gravar uma requisição em sua fila correspondente. 
+									Faz duas críticas básicas durante seu processamento: se a fila a ser gravada existe 
+									e se o conteúdo da mensagem não é vazio
+/processor/ResponseController.js -> classe responsável por armazenar todos os objetos "Responses" que deverão ser chamados
+									quando houver uma resposta a um request
+									
+/server/ServiceController.js -> classe responsável por gerenciar os processos vinculados a cada fila de requests.
+/server/ServiceProducer.js -> classe responsável por realizar os requests aos serviços de redirecionamentos correspondentes.
+
+/transformation/TransformXML2JSON.js -> classe responsável por transformar as mensagens XML em JSON
+/transformation/TransformJSON2XML.js -> classe responsável por transformar as mensagens JSON em XML
+/transformation/Transform.js -> classe que inicializa e direciona as chamadas às duas classes de transformações
+					
+					
+
+5) Outros
+
+	5.1) Scripts de crianção do banco -> /sqlScripts/bemagateway.sql
+
+	5.2) Módulos a serem importados pro projeto:
+
+					- bluebird
+					- js2xmlparser2
+					- node-rest-client
+					- pg
+					- soap
+					- x2js
+					- xml2js
+					- xmldom
+				
+				
+				
+				
+				
+				
+				
+			
+			
+			
+
+	

@@ -1,0 +1,68 @@
+{
+  "name": "BusinessMessage",
+  "xmlName": "BusinessMessage",
+  "type": "object",
+  "attributes": [
+    {
+      "name": "BusinessContent",
+      "xmlName": "BusinessContent",
+      "type": "object",
+      "attributes": [
+        {
+          "name": "InternalId",
+          "xmlName": [
+            "TOTVSMessage",
+            "BusinessMessage",
+            "BusinessContent",
+            "InternalId"
+          ],
+          "type": "string"
+        },
+        {
+          "name": "CompanyId",
+          "xmlName": [
+            "TOTVSMessage",
+            "BusinessMessage",
+            "BusinessContent",
+            "CompanyId"
+          ],
+          "type": "string"
+        },
+        {
+          "name": "ListOfTaxes",
+          "xmlName": [
+            "TOTVSMessage",
+            "BusinessMessage",
+            "BusinessContent",
+            "ListOfTaxes",
+            "Tax"
+          ],
+          "type": "array",
+          "attributes": [
+            {
+              "name": "Taxe",
+              "xmlName": [
+                "Taxe"
+              ],
+              "type": "number"
+            },
+            {
+              "name": "CalculationBasis",
+              "xmlName": [
+                "CalculationBasis"
+              ],
+              "type": "number"
+            },
+            {
+              "name": "Value",
+              "xmlName": [
+                "Value"
+              ],
+              "type": "number"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,222 @@
+{
+  "name": "BusinessContent",
+  "arrayPath": [
+    "BusinessContent"
+  ],
+  "childNodes": [
+    {
+      "name": "InternalId",
+      "arrayPath": [],
+      "nodeValue": {
+        "json": [
+          "InternalId"
+        ]
+      }
+    },
+    {
+      "name": "MovementDate",
+      "arrayPath": [],
+      "nodeValue": {
+        "json": [
+          "MovementDate"
+        ]
+      }
+    },
+    {
+      "name": "IssueDateReduction",
+      "arrayPath": [],
+      "nodeValue": {
+        "json": [
+          "IssueDateReduction"
+        ]
+      }
+    },
+    {
+      "name": "StationCode",
+      "arrayPath": [],
+      "nodeValue": {
+        "json": [
+          "StationCode"
+        ]
+      }
+    },
+    {
+      "name": "ReductionCode",
+      "arrayPath": [],
+      "nodeValue": {
+        "json": [
+          "ReductionCode"
+        ]
+      }
+    },
+    {
+      "name": "CounterCode",
+      "arrayPath": [],
+      "nodeValue": {
+        "json": [
+          "CounterCode"
+        ]
+      }
+    },
+    {
+      "name": "CounterReset",
+      "arrayPath": [],
+      "nodeValue": {
+        "json": [
+          "CounterReset"
+        ]
+      }
+    },
+    {
+      "name": "InitialValue",
+      "arrayPath": [],
+      "nodeValue": {
+        "json": [
+          "InitialValue"
+        ]
+      }
+    },
+    {
+      "name": "FinalValue",
+      "arrayPath": [],
+      "nodeValue": {
+        "json": [
+          "FinalValue"
+        ]
+      }
+    },
+    {
+      "name": "InitialCounter",
+      "arrayPath": [],
+      "nodeValue": {
+        "json": [
+          "InitialCounter"
+        ]
+      }
+    },
+    {
+      "name": "FinalCounter",
+      "arrayPath": [],
+      "nodeValue": {
+        "json": [
+          "FinalCounter"
+        ]
+      }
+    },
+    {
+      "name": "ValueCancellations",
+      "arrayPath": [],
+      "nodeValue": {
+        "json": [
+          "ValueCancellations"
+        ]
+      }
+    },
+    {
+      "name": "DiscountValue",
+      "arrayPath": [],
+      "nodeValue": {
+        "json": [
+          "DiscountValue"
+        ]
+      }
+    },
+    {
+      "name": "SalesValueNet",
+      "arrayPath": [],
+      "nodeValue": {
+        "json": [
+          "SalesValueNet"
+        ]
+      }
+    },
+    {
+      "name": "TaxReplacementValue",
+      "arrayPath": [],
+      "nodeValue": {
+        "json": [
+          "TaxReplacementValue"
+        ]
+      }
+    },
+    {
+      "name": "FreeValue",
+      "arrayPath": [],
+      "nodeValue": {
+        "json": [
+          "FreeValue"
+        ]
+      }
+    },
+    {
+      "name": "UntaxedValue",
+      "arrayPath": [],
+      "nodeValue": {
+        "json": [
+          "UntaxedValue"
+        ]
+      }
+    },
+    {
+      "name": "ValueOfOthersReceivables",
+      "arrayPath": [],
+      "nodeValue": {
+        "json": [
+          "ValueOfOthersReceivables"
+        ]
+      }
+    },
+    {
+      "name": "AmountOfTaxDue",
+      "arrayPath": [],
+      "nodeValue": {
+        "json": [
+          "AmountOfTaxDue"
+        ]
+      }
+    },
+    {
+      "name": "IssValue",
+      "arrayPath": [],
+      "nodeValue": {
+        "json": [
+          "IssValue"
+        ]
+      }
+    },
+    {
+      "name": "ListOfAliquot",
+      "arrayPath": ["ListOfAliquot"],
+      "childNodes": [
+        {
+          "arrayItems": true,
+          "name": "Aliquot",
+          "arrayPath": [],
+          "childNodes": [
+            {
+              "name": "AliquotCode",
+              "arrayPath": [],
+              "nodeValue": {
+                "json": [
+                  "AliquotCode"
+                ]
+              }
+            },
+            {
+              "name": "AliquotBase",
+              "arrayPath": [],
+              "nodeValue": {
+                "json": [
+                  "AliquotBase"
+                ]
+              }
+            }
+          ]
+        }
+      ]
+
+    }
+
+
+  ]
+}

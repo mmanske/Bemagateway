@@ -1,0 +1,6 @@
+{
+  "mappingFiles":[
+    "/server/boot/apis/ProtheusIntegration.json",
+    "/server/boot/apis/PMSServices.json"
+  ]
+}

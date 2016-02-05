@@ -1,0 +1,330 @@
+{
+
+  "name": "BusinessContent",
+  "arrayPath": [
+    "BusinessContent"
+  ],
+  "childNodes": [
+    {
+      "name": "CompanyId",
+      "arrayPath": [],
+      "nodeValue": {
+        "json": [
+          "CompanyId"
+        ]
+      }
+    },
+    {
+      "name": "BranchId",
+      "arrayPath": [],
+      "nodeValue": {
+        "json": [
+          "BranchId"
+        ]
+      }
+    },
+    {
+      "name": "CompanyInternalId",
+      "arrayPath": [],
+      "nodeValue": {
+        "json": [
+          "CompanyInternalId"
+        ]
+      }
+    },
+    {
+      "Code": "Code",
+      "arrayPath": [],
+      "nodeValue": {
+        "json": [
+          "Code"
+        ]
+      }
+    },
+    {
+      "name": "InternalId",
+      "arrayPath": [],
+      "nodeValue": {
+        "json": [
+          "InternalId"
+        ]
+      }
+    },
+    {
+      "name": "ShortName",
+      "arrayPath": [],
+      "nodeValue": {
+        "json": [
+          "ShortName"
+        ]
+      }
+    },
+    {
+      "name": "Name",
+      "arrayPath": [],
+      "nodeValue": {
+        "json": [
+          "Name"
+        ]
+      }
+    },
+    {
+      "name": "Active",
+      "arrayPath": [],
+      "nodeValue": {
+        "json": [
+          "Active"
+        ]
+      }
+    },
+    {
+      "name": "StockGroupCode",
+      "arrayPath": [],
+      "nodeValue": {
+        "json": [
+          "StockGroupCode"
+        ]
+      }
+    },
+    {
+      "name": "StockGroupInternalId",
+      "arrayPath": [],
+      "nodeValue": {
+        "json": [
+          "StockGroupInternalId"
+        ]
+      }
+    },
+    {
+      "name": "StockGroupDescription",
+      "arrayPath": [],
+      "nodeValue": {
+        "json": [
+          "StockGroupDescription"
+        ]
+      }
+    },
+    {
+      "name": "UnitOfMeasureCode",
+      "arrayPath": [],
+      "nodeValue": {
+        "json": [
+          "UnitOfMeasureCode"
+        ]
+      }
+    },
+    {
+      "name": "UnitOfMeasureInternalId",
+      "arrayPath": [],
+      "nodeValue": {
+        "json": [
+          "UnitOfMeasureInternalId"
+        ]
+      }
+    },
+    {
+      "name": "StandardWarehouseCode",
+      "arrayPath": [],
+      "nodeValue": {
+        "json": [
+          "StandardWarehouseCode"
+        ]
+      }
+    },
+    {
+      "name": "StandardWarehouseInternalId",
+      "arrayPath": [],
+      "nodeValue": {
+        "json": [
+          "StandardWarehouseInternalId"
+        ]
+      }
+    },
+    {
+      "name": "StandardWarehouseDescription",
+      "arrayPath": [],
+      "nodeValue": {
+        "json": [
+          "StandardWarehouseDescription"
+        ]
+      }
+    },
+    {
+      "name": "EconomicLot",
+      "arrayPath": [],
+      "nodeValue": {
+        "json": [
+          "EconomicLot"
+        ]
+      }
+    },
+    {
+      "name": "MinimumLot",
+      "arrayPath": [],
+      "nodeValue": {
+        "json": [
+          "MinimumLot"
+        ]
+      }
+    },
+    {
+      "name": "NetWeight",
+      "arrayPath": [],
+      "nodeValue": {
+        "json": [
+          "NetWeight"
+        ]
+      }
+    },
+    {
+      "name": "GrossWeight",
+      "arrayPath": [],
+      "nodeValue": {
+        "json": [
+          "GrossWeight"
+        ]
+      }
+    },
+    {
+      "name": "Origin",
+      "arrayPath": [],
+      "nodeValue": {
+        "json": [
+          "Origin"
+        ]
+      }
+    },
+    {
+      "name": "FiscalInformation",
+      "arrayPath": [],
+      "childNodes": [
+        {
+          "name": "FiscalClassification",
+          "arrayPath": [],
+          "childNodes": [
+            {
+              "name": "Code",
+              "arrayPath": [],
+              "nodeValue": {
+                "json": [
+                  "FiscalInformation",
+                  "FiscalClassification",
+                  "Code"
+                ]
+              }
+            },
+            {
+              "name": "FiscalClassificationInternalId",
+              "arrayPath": [],
+              "nodeValue": {
+                "json": [
+                  "FiscalInformation",
+                  "FiscalClassification",
+                  "FiscalClassificationInternalId"
+                ]
+              }
+            },
+            {
+              "name": "Description",
+              "arrayPath": [],
+              "nodeValue": {
+                "json": [
+                  "FiscalInformation",
+                  "FiscalClassification",
+                  "Description"
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+
+    {
+      "name": "ProductType",
+      "arrayPath": [],
+      "nodeValue": {
+        "json": [
+          "ProductType"
+        ]
+      }
+    },
+    {
+      "name": "Trail",
+      "arrayPath": [],
+      "nodeValue": {
+        "json": [
+          "Trail"
+        ]
+      }
+    },
+    {
+      "name": "BinControl",
+      "arrayPath": [],
+      "nodeValue": {
+        "json": [
+          "BinControl"
+        ]
+      }
+    },
+    {
+      "name": "MultiplicationFactorValue",
+      "arrayPath": [],
+      "nodeValue": {
+        "json": [
+          "MultiplicationFactorValue"
+        ]
+      }
+    },
+    {
+      "name": "Values",
+      "arrayPath": [],
+      "childNodes": [
+        {
+          "name": "CostPrice",
+          "arrayPath": [],
+          "nodeValue": {
+            "json": [
+              "Values",
+              "CostPrice"
+            ]
+          }
+        },
+        {
+          "name": "SalesPrice",
+          "arrayPath": [],
+          "nodeValue": {
+            "json": [
+              "Values",
+              "SalesPrice"
+            ]
+          }
+        },
+        {
+          "name": "AverageCostPrice",
+          "arrayPath": [],
+          "nodeValue": {
+            "json": [
+              "Values",
+              "AverageCostPrice"
+            ]
+          }
+        },
+        {
+          "name": "StandardCostPrice",
+          "arrayPath": [],
+          "nodeValue": {
+            "json": [
+              "Values",
+              "StandardCostPrice"
+            ]
+          }
+        }
+
+      ]
+    }
+
+  ]
+
+
+}

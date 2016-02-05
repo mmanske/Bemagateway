@@ -1,0 +1,268 @@
+{
+  "hasBusinessEvent": false,
+  "hasBusinessRequest": true,
+  "name": "BusinessContent",
+  "arrayPath": [
+    "BusinessContent"
+  ],
+  "childNodes": [
+    {
+      "name": "CompanyId",
+      "arrayPath": [],
+      "nodeValue": {
+        "json": [
+          "CompanyId"
+        ]
+      }
+    },
+    {
+      "name": "BranchId",
+      "arrayPath": [],
+      "nodeValue": {
+        "json": [
+          "BranchId"
+        ]
+      }
+    },
+    {
+      "name": "CompanyInternalId",
+      "arrayPath": [],
+      "nodeValue": {
+        "json": [
+          "CompanyInternalId"
+        ]
+      }
+    },
+    {
+      "name": "InternalId",
+      "arrayPath": [],
+      "nodeValue": {
+        "json": [
+          "InternalId"
+        ]
+      }
+    }
+
+  ,
+    {
+      "name": "AccountReceivableDocumentInternalId",
+      "arrayPath": [],
+      "nodeValue": {
+        "json": [
+          "AccountReceivableDocumentInternalId"
+        ]
+      }
+    }
+  ,
+    {
+      "name": "PaymentDate",
+      "arrayPath": [],
+      "nodeValue": {
+        "json": [
+          "PaymentDate"
+        ]
+      }
+    }
+  ,
+    {
+      "name": "CreditDate",
+      "arrayPath": [],
+      "nodeValue": {
+        "json": [
+          "CreditDate"
+        ]
+      }
+    }
+  ,
+    {
+      "name": "EntryDate",
+      "arrayPath": [],
+      "nodeValue": {
+        "json": [
+          "EntryDate"
+        ]
+      }
+    }
+  ,
+    {
+      "name": "PaymentValue",
+      "arrayPath": [],
+      "nodeValue": {
+        "json": [
+          "PaymentValue"
+        ]
+      }
+    }
+  ,
+    {
+      "name": "CurrencyInternalId",
+      "arrayPath": [],
+      "nodeValue": {
+        "json": [
+          "CurrencyInternalId"
+        ]
+      }
+    }
+  ,
+    {
+      "name": "CurrencyRate",
+      "arrayPath": [],
+      "nodeValue": {
+        "json": [
+          "CurrencyRate"
+        ]
+      }
+    }
+  ,
+    {
+      "name": "StoreId",
+      "arrayPath": [],
+      "nodeValue": {
+        "json": [
+          "StoreId"
+        ]
+      }
+    }
+  ,
+    {
+      "name": "PaymentMethod",
+      "arrayPath": [],
+      "nodeValue": {
+        "json": [
+          "PaymentMethod"
+        ]
+      }
+    }
+  ,
+    {
+      "name": "PaymentMeans",
+      "arrayPath": [],
+      "nodeValue": {
+        "json": [
+          "PaymentMeans"
+        ]
+      }
+    }
+  ,
+    {
+      "name": "HolderCode",
+      "arrayPath": [],
+      "nodeValue": {
+        "json": [
+          "HolderCode"
+        ]
+      }
+    }
+  ,
+    {
+      "name": "FinancialInternalId",
+      "arrayPath": [],
+      "nodeValue": {
+        "json": [
+          "FinancialInternalId"
+        ]
+      }
+    }
+  ,
+    {
+      "name": "HistoryText",
+      "arrayPath": [],
+      "nodeValue": {
+        "json": [
+          "HistoryText"
+        ]
+      }
+    }
+  ,
+    {
+      "name": "DischargeSequence",
+      "arrayPath": [],
+      "nodeValue": {
+        "json": [
+          "DischargeSequence"
+        ]
+      }
+    },
+    {
+      "name": "OtherValues",
+      "arrayPath": [],
+      "childNodes": [
+        {
+          "name": "DiscountValue",
+          "arrayPath": [],
+          "nodeValue": {
+            "json": [
+              "OtherValues",
+              "DiscountValue"
+            ]
+          }
+        },
+        {
+          "name": "ScholarshipValue",
+          "arrayPath": [],
+          "nodeValue": {
+            "json": [
+              "OtherValues",
+              "ScholarshipValue"
+            ]
+          }
+        }
+      ,
+        {
+          "name": "InterestValue",
+          "arrayPath": [],
+          "nodeValue": {
+            "json": [
+              "OtherValues",
+              "InterestValue"
+            ]
+          }
+        }
+      ,
+        {
+          "name": "AbatementValue",
+          "arrayPath": [],
+          "nodeValue": {
+            "json": [
+              "OtherValues",
+              "AbatementValue"
+            ]
+          }
+        }
+      ,
+        {
+          "name": "ExpensesValue",
+          "arrayPath": [],
+          "nodeValue": {
+            "json": [
+              "OtherValues",
+              "ExpensesValue"
+            ]
+          }
+        }
+      ,
+        {
+          "name": "NotaryCostsValue",
+          "arrayPath": [],
+          "nodeValue": {
+            "json": [
+              "OtherValues",
+              "NotaryCostsValue"
+            ]
+          }
+        }
+      ,
+        {
+          "name": "FineValue",
+          "arrayPath": [],
+          "nodeValue": {
+            "json": [
+              "OtherValues",
+              "FineValue"
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

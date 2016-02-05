@@ -1,0 +1,210 @@
+{
+  "valueForType": {
+    "tag": "#",
+    "attribute": "@"
+  },
+  "hasBusinessEvent": true,
+  "hasBusinessRequest": false,
+  "rootElementName": "TOTVSMessage",
+  "rootElement": {
+    "childNodes": [
+      {
+        "arrayPath": [
+          "TOTVSMessage",
+          "MessageInformation"
+        ],
+        "name": "MessageInformation",
+        "attributes": [
+          {
+            "json": [
+              "version"
+            ],
+            "xml": "version"
+          }
+        ],
+        "childNodes": [
+          {
+            "name": "UUID",
+            "arrayPath": [],
+            "nodeValue": {
+              "json": [
+                "UUID"
+              ]
+            }
+          },
+          {
+            "name": "Type",
+            "arrayPath": [],
+            "nodeValue": {
+              "json": [
+                "Type"
+              ]
+            }
+          },
+          {
+            "name": "Transaction",
+            "arrayPath": [],
+            "nodeValue": {
+              "json": [
+                "Transaction"
+              ]
+            }
+          },
+          {
+            "name": "StandardVersion",
+            "arrayPath": [],
+            "nodeValue": {
+              "json": [
+                "StandardVersion"
+              ]
+            }
+          },
+          {
+            "name": "SourceApplication",
+            "arrayPath": [],
+            "nodeValue": {
+              "json": [
+                "SourceApplication"
+              ]
+            }
+          },
+          {
+            "name": "CompanyId",
+            "arrayPath": [],
+            "nodeValue": {
+              "json": [
+                "CompanyId"
+              ]
+            }
+          },
+          {
+            "name": "BranchId",
+            "arrayPath": [],
+            "nodeValue": {
+              "json": [
+                "BranchId"
+              ]
+            }
+          },
+          {
+            "name": "GeneratedOn",
+            "arrayPath": [],
+            "nodeValue": {
+              "json": [
+                "GeneratedOn"
+              ]
+            }
+          },
+          {
+            "name": "DeliveryType",
+            "arrayPath": [],
+            "nodeValue": {
+              "json": [
+                "DeliveryType"
+              ]
+            }
+          },
+          {
+            "name": "Product",
+            "arrayPath": [
+              "Product"
+            ],
+            "attributes": [
+              {
+                "json": [
+                  "name"
+                ],
+                "xml": "name"
+              },
+              {
+                "json": [
+                  "version"
+                ],
+                "xml": "version"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "arrayPath": [
+          "TOTVSMessage",
+          "BusinessMessage"
+        ],
+        "name": "BusinessMessage",
+        "childNodes": [
+          {
+            "name": "BusinessRequest",
+            "arrayPath": [
+              "BusinessRequest"
+            ],
+            "childNodes": [
+              {
+                "name": "Operation",
+                "arrayPath": [],
+                "nodeValue": {
+                  "json": [
+                    "Operation"
+                  ]
+                }
+              }
+            ]
+          },
+          {
+            "name": "BusinessEvent",
+            "arrayPath": [
+              "BusinessEvent"
+            ],
+            "childNodes": [
+              {
+                "name": "Entity",
+                "arrayPath": [],
+                "nodeValue": {
+                  "json": [
+                    "Entity"
+                  ]
+                }
+              },
+              {
+                "name": "Event",
+                "arrayPath": [],
+                "nodeValue": {
+                  "json": [
+                    "Event"
+                  ]
+                }
+              },
+              {
+                "name": "Identification",
+                "arrayPath": [
+                  "Identification"
+                ],
+                "childNodes": [
+                  {
+                    "name": "Key",
+                    "attributes": [
+                      {
+                        "json": [
+                          "Key",
+                          "name"
+                        ],
+                        "xml": "name"
+                      }
+                    ],
+                    "nodeValue": {
+                      "json": [
+                        "Key",
+                        "content"
+                      ]
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
+

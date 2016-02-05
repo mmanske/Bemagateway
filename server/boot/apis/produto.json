@@ -1,0 +1,106 @@
+[{
+  "endpointType": "REST",
+  "mappings": [
+      {
+        "description": "Listar produtos",
+        "endpoint": "/api/produto",
+        "method": "GET",
+        "queue": "default",
+        "type": "static",
+        "transformationRequest": "produtoinout.json",
+        "transformationResponse": "produtooutin.json",
+        "wsdlRedirect": "http://localhost:8080/wsTesteGateway/services/ProductsService?wsdl",
+        "redirectType": "SOAP",
+        "parameters": {},
+        "soapMethod": "getProducts",
+        "returnMethod": "getProductsReturn"
+
+      },
+      {
+        "description": "Localizar produto pelo ID",
+        "endpoint": "/api/produto/:id",
+        "method": "GET",
+        "queue": "default",
+        "type": "static",
+        "transformationRequest": "produtoinout.json",
+        "wsdlRedirect": "http://localhost:8080/wsTesteGateway/services/ProductsService?wsdl",
+        "redirectType": "SOAP",
+        "parameters": {"productID": "id"},
+        "soapMethod": "getProduct",
+        "returnMethod": "getProductReturn"
+      },
+      {
+        "description": "Gravar Produto",
+        "endpoint": "/api/produto",
+        "method": "POST",
+        "queue": "default",
+        "type": "static",
+        "transformationToXML": "commissionedSeller.jade",
+        "transformationToJSON": "commissionedSeller.hbs",
+        "wsdlRedirect": "http://localhost:8080/wsTesteGateway/services/ProductsService?wsdl",
+        "redirectType": "SOAP",
+        "parameters": {"xml": "POST_BODY"},
+        "soapMethod": "saveProduct",
+        "returnMethod": "saveProductReturn"
+
+      }
+    ]
+}, 
+{
+"endpointType": "SOAP",
+ "mappings": [
+     {
+         "description": "Atualiza Produtos",
+         "wsdl": "ProductsService.wsdl",
+         "endPoint": "/bemagw/api/ProductsService",
+         "serviceName": "ProductsServiceService",
+         "portName": "ProductsService",
+         "redirectType": "REST",
+         "operations": [
+             {
+                "requestTimeout": 10000,
+                "responseTimeout": 10000,
+                "operation": "getProduct",
+                "queue": "default",
+                "synchronous": false,
+                "urlRedirect": "http://localhost:8080/restTesteGW/rest/product/${productID}",
+                "parameters": {"productID": "productID"},
+                "method": "GET",
+                "transformationToXML": "produto.jade",
+                "transformationToJSON": "produto.hbs"
+
+             },
+             {
+               "requestTimeout": 10000,
+               "responseTimeout": 10000,
+               "operation": "getProducts",
+               "queue": "default",
+               "synchronous": false,
+               "urlRedirect": "http://localhost:8080/restTesteGW/rest/product",
+               "parameters": {},
+               "method": "GET",
+               "transformationToXML": "produtos.jade",
+               "arrayRootElement": "produtos",
+               "transformationToJSON": "produto.hbs"
+             },
+            {
+              "requestTimeout": 10000,
+              "responseTimeout": 10000,
+              "operation": "saveProduct",
+              "soapServiceXmlParams": [{"paramName": "xml", "rootElementName": "produto"}],
+              "queue": "default",
+              "synchronous": false,
+              "urlRedirect": "http://localhost:8080/restTesteGW/rest/product",
+              "parameters": {},
+              "method": "POST",
+              "transformationToXML": "produto.jade",
+              "transformationToJSON": "produto.hbs",
+              "parameters": {"POST_BODY": "xml"}
+            }
+
+
+         ]
+     }
+ ]
+}
+]

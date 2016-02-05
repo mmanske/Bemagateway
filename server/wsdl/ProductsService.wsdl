@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions targetNamespace="http://ws.bematech.com" xmlns:apachesoap="http://xml.apache.org/xml-soap" xmlns:impl="http://ws.bematech.com" xmlns:intf="http://ws.bematech.com" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:wsdlsoap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <!--WSDL created by Apache Axis version: 1.4
+    Built on Apr 22, 2006 (06:55:48 PDT)-->
+    <wsdl:types>
+        <schema elementFormDefault="qualified" targetNamespace="http://ws.bematech.com" xmlns="http://www.w3.org/2001/XMLSchema">
+            <element name="getProduct">
+                <complexType>
+                    <sequence>
+                        <element name="productID" type="xsd:int"/>
+                    </sequence>
+                </complexType>
+            </element>
+            <element name="getProductResponse">
+                <complexType>
+                    <sequence>
+                        <element name="getProductReturn" type="xsd:string"/>
+                    </sequence>
+                </complexType>
+            </element>
+            <element name="getProducts">
+                <complexType/>
+            </element>
+            <element name="getProductsResponse">
+                <complexType>
+                    <sequence>
+                        <element name="getProductsReturn" type="xsd:string"/>
+                    </sequence>
+                </complexType>
+            </element>
+            <element name="saveProduct">
+                <complexType>
+                    <sequence>
+                        <element name="xml" type="xsd:string"/>
+                    </sequence>
+                </complexType>
+            </element>
+            <element name="saveProductResponse">
+                <complexType>
+                    <sequence>
+                        <element name="saveProductReturn" type="xsd:string"/>
+                    </sequence>
+                </complexType>
+            </element>
+        </schema>
+    </wsdl:types>
+
+    <wsdl:message name="getProductsResponse">
+
+        <wsdl:part element="impl:getProductsResponse" name="parameters">
+
+        </wsdl:part>
+
+    </wsdl:message>
+
+    <wsdl:message name="getProductRequest">
+
+        <wsdl:part element="impl:getProduct" name="parameters">
+
+        </wsdl:part>
+
+    </wsdl:message>
+
+    <wsdl:message name="saveProductRequest">
+
+        <wsdl:part element="impl:saveProduct" name="parameters">
+
+        </wsdl:part>
+
+    </wsdl:message>
+
+    <wsdl:message name="getProductResponse">
+
+        <wsdl:part element="impl:getProductResponse" name="parameters">
+
+        </wsdl:part>
+
+    </wsdl:message>
+
+    <wsdl:message name="getProductsRequest">
+
+        <wsdl:part element="impl:getProducts" name="parameters">
+
+        </wsdl:part>
+
+    </wsdl:message>
+
+    <wsdl:message name="saveProductResponse">
+
+        <wsdl:part element="impl:saveProductResponse" name="parameters">
+
+        </wsdl:part>
+
+    </wsdl:message>
+
+    <wsdl:portType name="ProductsService">
+
+        <wsdl:operation name="getProduct">
+
+            <wsdl:input message="impl:getProductRequest" name="getProductRequest">
+
+            </wsdl:input>
+
+            <wsdl:output message="impl:getProductResponse" name="getProductResponse">
+
+            </wsdl:output>
+
+        </wsdl:operation>
+
+        <wsdl:operation name="getProducts">
+
+            <wsdl:input message="impl:getProductsRequest" name="getProductsRequest">
+
+            </wsdl:input>
+
+            <wsdl:output message="impl:getProductsResponse" name="getProductsResponse">
+
+            </wsdl:output>
+
+        </wsdl:operation>
+
+        <wsdl:operation name="saveProduct">
+
+            <wsdl:input message="impl:saveProductRequest" name="saveProductRequest">
+
+            </wsdl:input>
+
+            <wsdl:output message="impl:saveProductResponse" name="saveProductResponse">
+
+            </wsdl:output>
+
+        </wsdl:operation>
+
+    </wsdl:portType>
+
+    <wsdl:binding name="ProductsServiceSoapBinding" type="impl:ProductsService">
+
+        <wsdlsoap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+
+        <wsdl:operation name="getProduct">
+
+            <wsdlsoap:operation soapAction=""/>
+
+            <wsdl:input name="getProductRequest">
+
+                <wsdlsoap:body use="literal"/>
+
+            </wsdl:input>
+
+            <wsdl:output name="getProductResponse">
+
+                <wsdlsoap:body use="literal"/>
+
+            </wsdl:output>
+
+        </wsdl:operation>
+
+        <wsdl:operation name="getProducts">
+
+            <wsdlsoap:operation soapAction=""/>
+
+            <wsdl:input name="getProductsRequest">
+
+                <wsdlsoap:body use="literal"/>
+
+            </wsdl:input>
+
+            <wsdl:output name="getProductsResponse">
+
+                <wsdlsoap:body use="literal"/>
+
+            </wsdl:output>
+
+        </wsdl:operation>
+
+        <wsdl:operation name="saveProduct">
+
+            <wsdlsoap:operation soapAction=""/>
+
+            <wsdl:input name="saveProductRequest">
+
+                <wsdlsoap:body use="literal"/>
+
+            </wsdl:input>
+
+            <wsdl:output name="saveProductResponse">
+
+                <wsdlsoap:body use="literal"/>
+
+            </wsdl:output>
+
+        </wsdl:operation>
+
+    </wsdl:binding>
+
+    <wsdl:service name="ProductsServiceService">
+
+        <wsdl:port binding="impl:ProductsServiceSoapBinding" name="ProductsService">
+
+            <wsdlsoap:address location="http://localhost:9000/bemagw/api/ProductsService"/>
+
+        </wsdl:port>
+
+    </wsdl:service>
+
+</wsdl:definitions>

@@ -1,0 +1,51 @@
+{
+  "TOTVSMessage": {
+    "BusinessMessage": {
+      "BusinessContent": {
+        "BranchId": "4",
+        "Code": "E5FDC08D219A4FDFBAEAA5050453704F",
+        "CompanyId": "1",
+        "CompanyInternalId": "",
+        "InternalId": "E5FDC08D219A4FDFBAEAA5050453704F",
+        "Login": "",
+        "Name": "Benfica Fc LDA",
+        "SalesChargeInformation": {
+          "SalesChargeInterface": "S",
+          "VendorInternalId": "668913C47FEC40BB8963A4AB040AA88E"
+        },
+        "SellerAddress": "ALAMEDA SANTOS",
+        "SellerCity": "SÃO PAULO",
+        "SellerNeighborhood": "Bela Vista",
+        "SellerPassword": "",
+        "SellerPhoneDDD": "",
+        "ShortName": "Benfica Fc"
+      },
+      "BusinessEvent": {
+        "Entity": "Seller",
+        "Event": "upsert",
+        "Identification": {
+          "Key": {
+            "content": "E5FDC08D219A4FDFBAEAA5050453704F",
+            "name": "InternalId"
+          }
+        }
+      }
+    },
+    "MessageInformation": {
+      "BranchId": "4",
+      "CompanyId": "1",
+      "DeliveryType": "Sync",
+      "GeneratedOn": "2015-08-31T20:26:42",
+      "Product": {
+        "name": "BEMATECH",
+        "version": "1.0"
+      },
+      "SourceApplication": "VHF",
+      "StandardVersion": "1.000",
+      "Transaction": "SELLER",
+      "Type": "BusinessMessage",
+      "UUID": "BD3144611AB14D74A19D81D74E615683",
+      "version": "1.002"
+    }
+  }
+}

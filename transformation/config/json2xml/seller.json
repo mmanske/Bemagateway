@@ -1,0 +1,152 @@
+{
+  "name": "BusinessContent",
+  "arrayPath": [
+    "BusinessContent"
+  ],
+  "childNodes": [
+    {
+      "name": "CompanyId",
+      "arrayPath": [],
+      "nodeValue": {
+        "json": [
+          "CompanyId"
+        ]
+      }
+    },
+    {
+      "name": "BranchId",
+      "arrayPath": [],
+      "nodeValue": {
+        "json": [
+          "BranchId"
+        ]
+      }
+    },
+    {
+      "name": "CompanyInternalId",
+      "arrayPath": [],
+      "nodeValue": {
+        "json": [
+          "CompanyInternalId"
+        ]
+      }
+    },
+    {
+      "name": "InternalId",
+      "arrayPath": [],
+      "nodeValue": {
+        "json": [
+          "InternalId"
+        ]
+      }
+    },
+    {
+      "name": "Code",
+      "arrayPath": [],
+      "nodeValue": {
+        "json": [
+          "Code"
+        ]
+      }
+    },
+    {
+      "name": "Name",
+      "arrayPath": [],
+      "nodeValue": {
+        "json": [
+          "Name"
+        ]
+      }
+    },
+    {
+      "name": "ShortName",
+      "arrayPath": [],
+      "nodeValue": {
+        "json": [
+          "ShortName"
+        ]
+      }
+    },
+    {
+      "name": "Login",
+      "arrayPath": [],
+      "nodeValue": {
+        "json": [
+          "Login"
+        ]
+      }
+    },
+    {
+      "name": "SellerPassword",
+      "arrayPath": [],
+      "nodeValue": {
+        "json": [
+          "SellerPassword"
+        ]
+      }
+    },
+    {
+      "name": "SellerPhoneDDD",
+      "arrayPath": [],
+      "nodeValue": {
+        "json": [
+          "SellerPhoneDDD"
+        ]
+      }
+    },
+    {
+      "name": "SellerAddress",
+      "arrayPath": [],
+      "nodeValue": {
+        "json": [
+          "SellerAddress"
+        ]
+      }
+    },
+    {
+      "name": "SellerCity",
+      "arrayPath": [],
+      "nodeValue": {
+        "json": [
+          "SellerCity"
+        ]
+      }
+    },
+    {
+      "name": "SellerNeighborhood",
+      "arrayPath": [],
+      "nodeValue": {
+        "json": [
+          "SellerNeighborhood"
+        ]
+      }
+    },
+    {
+      "name": "SalesChargeInformation",
+      "arrayPath": [],
+      "childNodes": [
+        {
+          "name": "CustomerVendorInternalId",
+          "arrayPath": [],
+          "nodeValue": {
+            "json": [
+              "SalesChargeInformation",
+              "VendorInternalId"
+            ]
+          }
+        },
+        {
+          "name": "SalesChargeInterface",
+          "arrayPath": [],
+          "nodeValue": {
+            "json": [
+              "SalesChargeInformation",
+              "SalesChargeInterface"
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}
+

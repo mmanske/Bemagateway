@@ -1,0 +1,35 @@
+[
+  {
+    "endpointType": "SOAP",
+    "endPointPortNumber": 8099,
+    "mappings": [
+      {
+        "description": "Retorno de Chamada Assíncrona do Protheus",
+        "wsdl": "ProtheusIntegration.wsdl",
+        "endPoint": "/EAISERVICE.apw",
+        "serviceName": "EAISERVICE",
+        "portName": "EAISERVICESOAP",
+        "redirectType": "REST",
+        "operations": [
+          {
+            "requestTimeout": 10000,
+            "responseTimeout": 10000,
+            "operation": "RECEIVEMESSAGE",
+            "soapServiceXmlParams": [{"paramName": "INMSG", "rootElementName": "TOTVSMessage"}],
+            "queue": "default",
+            "synchronous": false,
+            "urlRedirect": "http://172.27.170.147:211/datasnap/rest/TServerListMethods/Retorno",
+            "parameters": {},
+            "method": "POST",
+            "transformationToXML": "retailSales_config.json",
+            "transformationToJSON": "retailSales_config.json",
+            "parameters": {"POST_BODY": "RECEIVEMESSAGE"}
+          }
+
+
+        ]
+      }
+    ]
+  }
+
+]

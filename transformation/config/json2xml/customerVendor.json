@@ -1,0 +1,320 @@
+{
+  "name": "BusinessContent",
+  "arrayPath": [
+    "BusinessContent"
+  ],
+  "childNodes": [
+    {
+      "name": "CompanyId",
+      "arrayPath": [],
+      "nodeValue": {
+        "json": [
+          "CompanyId"
+        ]
+      }
+    },
+    {
+      "name": "BranchId",
+      "arrayPath": [],
+      "nodeValue": {
+        "json": [
+          "BranchId"
+        ]
+      }
+    },
+    {
+      "name": "CompanyInternalId",
+      "arrayPath": [],
+      "nodeValue": {
+        "json": [
+          "CompanyInternalId"
+        ]
+      }
+    },
+
+    {
+      "Code": "Code",
+      "arrayPath": [],
+      "nodeValue": {
+        "json": [
+          "Code"
+        ]
+      }
+    },
+    {
+      "name": "StoreId",
+      "arrayPath": [],
+      "nodeValue": {
+        "json": [
+          "StoreId"
+        ]
+      }
+    },
+    {
+      "name": "InternalId",
+      "arrayPath": [],
+      "nodeValue": {
+        "json": [
+          "InternalId"
+        ]
+      }
+    },
+    {
+      "name": "ShortName",
+      "arrayPath": [],
+      "nodeValue": {
+        "json": [
+          "ShortName"
+        ]
+      }
+    },
+    {
+      "name": "Name",
+      "arrayPath": [],
+      "nodeValue": {
+        "json": [
+          "Name"
+        ]
+      }
+    },
+    {
+      "name": "StrategicCustomerType",
+      "arrayPath": [],
+      "nodeValue": {
+        "json": [
+          "StrategicCustomerType"
+        ]
+      }
+    },
+    {
+      "name": "Type",
+      "arrayPath": [],
+      "nodeValue": {
+        "json": [
+          "Type"
+        ]
+      }
+    },
+    {
+      "name": "RegisterSituation",
+      "arrayPath": [],
+      "nodeValue": {
+        "json": [
+          "RegisterSituation"
+        ]
+      }
+    },
+    {
+      "name": "GovernmentalInformation",
+      "arrayPath": [],
+      "childNodes": [
+        {
+          "name": "Id",
+          "arrayPath": [],
+          "attributes": [
+            {
+              "xml": "name",
+              "json": "name"
+            },
+            {
+              "xml": "scope",
+              "json": "scope"
+            }
+          ],
+          "nodeValue": {
+            "json": [
+              "GovernmentalInformation",
+              "Id"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "EntityType",
+      "arrayPath": [],
+      "nodeValue": {
+        "json": [
+          "EntityType"
+        ]
+      }
+    },
+    {
+      "name": "Address",
+      "arrayPath": [],
+      "childNodes": [
+        {
+          "name": "Address",
+          "arrayPath": [],
+          "nodeValue": {
+            "json": [
+              "Address",
+              "Address"
+            ]
+          }
+        },
+        {
+          "name": "Number",
+          "arrayPath": [],
+          "nodeValue": {
+            "json": [
+              "Address",
+              "Number"
+            ]
+          }
+        },
+        {
+          "name": "Complement",
+          "arrayPath": [],
+          "nodeValue": {
+            "json": [
+              "Address",
+              "Complement"
+            ]
+          }
+        },
+        {
+          "name": "District",
+          "arrayPath": [],
+          "nodeValue": {
+            "json": [
+              "Address",
+              "District"
+            ]
+          }
+        },
+        {
+          "name": "ZipCode",
+          "arrayPath": [],
+          "nodeValue": {
+            "json": [
+              "Address",
+              "ZipCode"
+            ]
+          }
+        },
+        {
+          "name": "POBox",
+          "arrayPath": [],
+          "nodeValue": {
+            "json": [
+              "Address",
+              "POBox"
+            ]
+          }
+        },
+        {
+          "name": "City",
+          "arrayPath": [],
+          "childNodes": [
+            {
+              "name": "CityCode",
+              "arrayPath": [],
+              "nodeValue": {
+                "json": [
+                  "Address",
+                  "City",
+                  "CityCode"
+                ]
+              }
+            },
+            {
+              "name": "CityInternalId",
+              "arrayPath": [],
+              "nodeValue": {
+                "json": [
+                  "Address",
+                  "City",
+                  "CityInternalId"
+                ]
+              }
+            },
+            {
+              "name": "CityDescription",
+              "arrayPath": [],
+              "nodeValue": {
+                "json": [
+                  "Address",
+                  "City",
+                  "CityDescription"
+                ]
+              }
+            }
+          ]
+        }
+
+      ,
+        {
+          "name": "State",
+          "arrayPath": [],
+          "childNodes": [
+            {
+              "name": "StateCode",
+              "arrayPath": [],
+              "nodeValue": {
+                "json": [
+                  "Address",
+                  "State",
+                  "StateCode"
+                ]
+              }
+            },
+            {
+              "name": "StateInternalId",
+              "arrayPath": [],
+              "nodeValue": {
+                "json": [
+                  "Address",
+                  "State",
+                  "StateInternalId"
+                ]
+              }
+            },
+            {
+              "name": "StateDescription",
+              "arrayPath": [],
+              "nodeValue": {
+                "json": [
+                  "Address",
+                  "State",
+                  "StateDescription"
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "name": "Country",
+          "arrayPath": [],
+          "childNodes": [
+            {
+              "name": "CountryCode",
+              "arrayPath": [],
+              "nodeValue": {
+                "json": [
+                  "Address",
+                  "Country",
+                  "CountryCode"
+                ]
+              }
+            },
+            {
+              "name": "CountryInternalId",
+              "arrayPath": [],
+              "nodeValue": {
+                "json": [
+                  "Address",
+                  "Country",
+                  "CountryInternalId"
+                ]
+              }
+            }
+          ]
+        }
+
+      ]
+    }
+
+
+  ]
+}

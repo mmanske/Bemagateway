@@ -1,0 +1,66 @@
+{
+  "hasBusinessEvent": false,
+  "hasBusinessRequest": true,
+  "name": "BusinessContent",
+  "arrayPath": [
+    "BusinessContent"
+  ],
+  "childNodes": [
+    {
+      "name": "CompanyId",
+      "arrayPath": [],
+      "nodeValue": {
+        "json": [
+          "CompanyId"
+        ]
+      }
+    },
+    {
+      "name": "InternalId",
+      "arrayPath": [],
+      "nodeValue": {
+        "json": [
+          "InternalId"
+        ]
+      }
+    },
+    {
+      "name": "BranchId",
+      "arrayPath": [],
+      "nodeValue": {
+        "json": [
+          "BranchId"
+        ]
+      }
+    }
+  ,
+    {
+      "name": "RetailSalesInternalId",
+      "arrayPath": [],
+      "nodeValue": {
+        "json": [
+          "RetailSalesInternalId"
+        ]
+      }
+    },
+    {
+      "name": "OperatorCode",
+      "arrayPath": [],
+      "nodeValue": {
+        "json": [
+          "OperatorCode"
+        ]
+      }
+    },
+    {
+      "name": "CancelDate",
+      "arrayPath": [],
+      "nodeValue": {
+        "json": [
+          "CancelDate"
+        ]
+      }
+    }
+
+  ]
+}

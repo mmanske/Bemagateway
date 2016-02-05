@@ -1,0 +1,72 @@
+{
+  "attributes": [
+    {
+      "name": "TOTVSMessage",
+      "xmlName": "TOTVSMessage",
+      "type": "object",
+      "attributes": [
+        {
+          "name": "MessageInformation",
+          "xmlName": "MessageInformation",
+          "type": "object",
+          "attributes": [
+            {
+              "name": "UUID",
+              "xmlName": [
+                "TOTVSMessage",
+                "MessageInformation",
+                "UUID"
+              ],
+              "type": "string"
+            },
+            {
+              "name": "Type",
+              "xmlName": [
+                "TOTVSMessage",
+                "MessageInformation",
+                "Type"
+              ],
+              "type": "string"
+            },
+            {
+              "name": "version",
+              "xmlName": [
+                "TOTVSMessage",
+                "MessageInformation",
+                "_version"
+              ],
+              "type": "string"
+            },
+            {
+              "name": "Product",
+              "xmlName": "Product",
+              "type": "object",
+              "attributes": [
+                {
+                  "name": "name",
+                  "xmlName": [
+                    "TOTVSMessage",
+                    "MessageInformation",
+                    "Product",
+                    "_name"
+                  ],
+                  "type": "string"
+                },
+                {
+                  "name": "version",
+                  "xmlName": [
+                    "TOTVSMessage",
+                    "MessageInformation",
+                    "Product",
+                    "_version"
+                  ],
+                  "type": "string"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

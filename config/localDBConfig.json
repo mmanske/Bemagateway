@@ -1,0 +1,7 @@
+{
+  "host": "localhost",
+  "name": "bemagateway",
+  "user": "bematech",
+  "password": "bematech",
+  "port": "5432"
+}
