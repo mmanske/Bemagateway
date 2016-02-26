@@ -1,0 +1,69 @@
+{
+  "TOTVSMessage": {
+    "BusinessMessage": {
+      "BusinessContent": {
+        "BranchId": "04",
+        "Code": "58",
+        "CompanyId": "01",
+        "CompanyInternalId": "01|04",
+        "CustomerVendorInternalId": "01|04C353||C",
+        "InternalId": "010458C353",
+        "IssueDate": "2004-03-18",
+        "ListOfAccountReceivableInformation": [
+            {
+              "ApportionmentDistribution": [
+                {
+                    "CostCenterInternalId": "",
+                    "DisbursementTypeInternalId": "0104",
+                    "ProjectActivityInternalId": "-1",
+                    "ResponsibilityCenterInternalId": "9999999999",
+                    "Value": "9,1"
+                  },
+                 {
+                    "CostCenterInternalId": "",
+                    "DisbursementTypeInternalId": "0106",
+                    "ProjectActivityInternalId": "-1",
+                    "ResponsibilityCenterInternalId": "9999999999",
+                    "Value": "91"
+                  }
+              ],
+              "DueDate": "2004-04-07",
+              "Value": "100,1"
+            }
+        ],
+        "ListOfRetailSales": [
+            {
+              "RetailSalesInternalId": "20"
+            }
+        ],
+        "Value": "100,1"
+      },
+      "BusinessEvent": {
+        "Entity": "HOTELINVOICE",
+        "Event": "upsert",
+        "Identification": {
+          "Key": {
+            "content": "010458C353",
+            "name": "InternalId"
+          }
+        }
+      }
+    },
+    "MessageInformation": {
+      "BranchId": "4",
+      "CompanyId": "1",
+      "DeliveryType": "Async",
+      "GeneratedOn": "2016-02-11T517:52:30",
+      "Product": {
+        "name": "BEMATECH",
+        "version": "1.000"
+      },
+      "SourceApplication": "FATURA",
+      "StandardVersion": "1.000",
+      "Transaction": "HOTELINVOICE",
+      "Type": "BusinessMessage",
+      "UUID": "F89D9A72-1C35-450D-831D-2474B96EB929",
+      "version": "1.000"
+    }
+  }
+}

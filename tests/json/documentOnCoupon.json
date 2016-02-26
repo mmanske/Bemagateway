@@ -1,0 +1,35 @@
+{
+  "TOTVSMessage": {
+    "MessageInformation": {
+      "version": "11.08",
+      "UUID": "f576146e-9338-4e3a-a6fc-ac2f38ba29ce",
+      "Type": "BusinessMessage",
+      "Transaction": "DOCUMENTONCOUPON",
+      "StandardVersion": "1.000",
+      "SourceApplication": "VHF",
+      "CompanyId": "1",
+      "BranchId": "4",
+      "Product": {
+        "name": "BEMATECH",
+        "version": "1.0"
+      },
+      "GeneratedOn": "2016-01-11T16:24:34",
+      "DeliveryType": "Sync"
+    },
+    "BusinessMessage": {
+      "BusinessRequest": {
+        "Operation": "DOCUMENTONCOUPON"
+      },
+      "BusinessContent": {
+        "InternalId": "3B7325703FD640058496A51004A319EB",
+        "CustomerVendorInternalId": "9999",
+        "CompanyInternalId": "E36F076E4B0F4CD3BDD6A5100367E064",
+        "ListOfRetailSales": [
+          {
+            "RetailSalesInternalId": "8FA02D9E987D49C48A2CCAC3EE25DF6C"
+          }
+        ]
+      }
+    }
+  }
+}

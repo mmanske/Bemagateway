@@ -1,0 +1,67 @@
+{
+  "TOTVSMessage": {
+    "BusinessMessage": {
+      "BusinessContent": {
+        "AccountNumber": "",
+        "AgencyNumber": "",
+        "AssessmentValue": "",
+        "BranchId": "4",
+        "CompanyId": "1",
+        "CompanyInternalId": "1|4",
+        "ContractNumber": "",
+        "CurrencyCode": "",
+        "CurrencyInternalId": "",
+        "CurrencyRate": "",
+        "CustomerCode": "",
+        "CustomerInternalId": "",
+        "DocumentNumber": "PR|35802",
+        "DocumentParcel": "",
+        "DocumentPrefix": "",
+        "DocumentTypeCode": "PR",
+        "DueDate": "2015-09-28",
+        "FinancialNatureInternalId": "",
+        "GrossValue": "0",
+        "HolderCode": "",
+        "InterestPercentage": "",
+        "InternalId": "25|1|4|35802",
+        "IssueDate": "2015-09-18",
+        "ListOfSourceDocument": "",
+        "NetValue": "1500",
+        "Observation": "",
+        "Origin": "",
+        "OurNumberBanking": "",
+        "RealDueDate": "",
+        "RealValue": "0",
+        "StoreId": "",
+        "Taxes": "",
+        "UniqueSerialNumber": ""
+      },
+      "BusinessEvent": {
+        "Entity": "ACCOUNTRECEIVABLEDOCUMENT",
+        "Event": "upsert",
+        "Identification": {
+          "Key": {
+            "content": "25|1|4|35802",
+            "name": "InternalId"
+          }
+        }
+      }
+    },
+    "MessageInformation": {
+      "BranchId": "4",
+      "CompanyId": "1",
+      "DeliveryType": "Sync",
+      "GeneratedOn": "2016-01-04T515:15:35",
+      "Product": {
+        "name": "BEMATECH",
+        "version": "1.0"
+      },
+      "SourceApplication": "VHF",
+      "StandardVersion": "1.000",
+      "Transaction": "ACCOUNTRECEIVABLEDOCUMENT",
+      "Type": "BusinessMessage",
+      "UUID": "D843490F-94CA-4059-A987-7D82481197AB",
+      "version": "2.003"
+    }
+  }
+}

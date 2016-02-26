@@ -1,0 +1,35 @@
+extends layout
+
+block content
+    BusinessMessage
+        BusinessEvent
+            Entity= TOTVSMessageBusinessMessageBusinessEventEntity
+            Event= TOTVSMessageBusinessMessageBusinessEventEvent
+            Identification
+                Key(name= TOTVSMessageBusinessMessageBusinessEventIdentificationKeyname)= TOTVSMessageBusinessMessageBusinessEventIdentificationKeycontent
+        BusinessContent
+            CompanyId= TOTVSMessageBusinessMessageBusinessContentCompanyId
+            BranchId= TOTVSMessageBusinessMessageBusinessContentBranchId
+            CompanyInternalId= TOTVSMessageBusinessMessageBusinessContentCompanyInternalId
+            InternalId= TOTVSMessageBusinessMessageBusinessContentInternalId
+            Code= TOTVSMessageBusinessMessageBusinessContentCode
+            IssueDate= TOTVSMessageBusinessMessageBusinessContentIssueDate
+            CustomerVendorInternalId= TOTVSMessageBusinessMessageBusinessContentCustomerVendorInternalId
+            Value= TOTVSMessageBusinessMessageBusinessContentValue
+            ListOfRetailSales
+                each retailSales in TOTVSMessageBusinessMessageBusinessContentListOfRetailSales
+                    RetailSales
+                        RetailSalesInternalId= retailSales.RetailSalesInternalId
+            ListOfAccountReceivableInformation
+                each accountReceivableInformation in TOTVSMessageBusinessMessageBusinessContentListOfAccountReceivableInformation
+                    AccountReceivableInformation
+                        Value= accountReceivableInformation.Value
+                        DueDate= accountReceivableInformation.DueDate
+                        ApportionmentDistribution
+                            each apportionment in accountReceivableInformation.ApportionmentDistribution
+                                Apportionment
+                                    CostCenterInternalId= apportionment.CostCenterInternalId
+                                    ResponsibilityCenterInternalId= apportionment.ResponsibilityCenterInternalId
+                                    ProjectActivityInternalId= apportionment.ProjectActivityInternalId
+                                    DisbursementTypeInternalId= apportionment.DisbursementTypeInternalId
+                                    Value= apportionment.Value

@@ -1,0 +1,35 @@
+extends layout
+
+block content
+    BusinessMessage
+        BusinessEvent
+            Entity= TOTVSMessageBusinessMessageBusinessEventEntity
+            Event= TOTVSMessageBusinessMessageBusinessEventEvent
+            Identification
+                Key(name= TOTVSMessageBusinessMessageBusinessEventIdentificationKeyname)= TOTVSMessageBusinessMessageBusinessEventIdentificationKeycontent
+        BusinessContent
+            InternalId= TOTVSMessageBusinessMessageBusinessContentInternalId
+            MovementDate= TOTVSMessageBusinessMessageBusinessContentMovementDate
+            IssueDateReduction= TOTVSMessageBusinessMessageBusinessContentIssueDateReduction
+            StationCode= TOTVSMessageBusinessMessageBusinessContentStationCode
+            ReductionCode= TOTVSMessageBusinessMessageBusinessContentReductionCode
+            CounterCode= TOTVSMessageBusinessMessageBusinessContentCounterCode
+            CounterReset= TOTVSMessageBusinessMessageBusinessContentCounterReset
+            InitialValue= TOTVSMessageBusinessMessageBusinessContentInitialValue
+            FinalValue= TOTVSMessageBusinessMessageBusinessContentFinalValue
+            InitialCounter= TOTVSMessageBusinessMessageBusinessContentInitialCounter
+            FinalCounter= TOTVSMessageBusinessMessageBusinessContentFinalCounter
+            ValueCancellations= TOTVSMessageBusinessMessageBusinessContentValueCancellations
+            DiscountValue= TOTVSMessageBusinessMessageBusinessContentDiscountValue
+            SalesValueNet= TOTVSMessageBusinessMessageBusinessContentSalesValueNet
+            TaxReplacementValue= TOTVSMessageBusinessMessageBusinessContentTaxReplacementValue
+            FreeValue= TOTVSMessageBusinessMessageBusinessContentFreeValue
+            UntaxedValue= TOTVSMessageBusinessMessageBusinessContentUntaxedValue
+            ValueOfOthersReceivables= TOTVSMessageBusinessMessageBusinessContentValueOfOthersReceivables
+            AmountOfTaxDue= TOTVSMessageBusinessMessageBusinessContentAmountOfTaxDue
+            IssValue= TOTVSMessageBusinessMessageBusinessContentIssValue
+            ListOfAliquot
+                each aliquot in TOTVSMessageBusinessMessageBusinessContentListOfAliquot
+                    Aliquot
+                        AliquotCode= aliquot.AliquotCode
+                        AliquotBase= aliquot.AliquotBase

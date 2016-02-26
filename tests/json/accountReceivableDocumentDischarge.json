@@ -1,0 +1,45 @@
+{
+  "TOTVSMessage": {
+    "BusinessMessage": {
+      "BusinessContent": {
+        "AccountReceivableDocumentInternalId": "CC|25|1|4|405790",
+        "BranchId": "4",
+        "CompanyId": "1",
+        "CompanyInternalId": "1|4",
+        "CreditDate": "2015-09-19",
+        "CurrencyInternalId": "",
+        "CurrencyRate": "0",
+        "DischargeSequence": "01",
+        "EntryDate": "2015-09-19",
+        "FinancialInternalId": "",
+        "HistoryText": "ESTORNO - ",
+        "HolderCode": "RC-0001|RC-00002",
+        "InternalId": "25|1|4|405791",
+        "PaymentDate": "2015-09-19",
+        "PaymentMeans": "",
+        "PaymentMethod": "",
+        "PaymentValue": "242,25",
+        "StoreId": "01"
+      },
+      "BusinessRequest": {
+        "Operation": "ACCOUNTRECEIVABLEDOCUMENTDISCHARGE"
+      }
+    },
+    "MessageInformation": {
+      "BranchId": "4",
+      "CompanyId": "1",
+      "DeliveryType": "Sync",
+      "GeneratedOn": "2016-01-04T515:35:23",
+      "Product": {
+        "name": "BEMATECH",
+        "version": "1.0"
+      },
+      "SourceApplication": "VHF",
+      "StandardVersion": "1.000",
+      "Transaction": "ACCOUNTRECEIVABLEDOCUMENTDISCHARGE",
+      "Type": "BusinessMessage",
+      "UUID": "D71BF52F-5F64-4CED-8386-773044CABB3F",
+      "version": "2.001"
+    }
+  }
+}

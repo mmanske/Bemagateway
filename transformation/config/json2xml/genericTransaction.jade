@@ -1,0 +1,13 @@
+extends layout
+
+block content
+    ResponseMessage
+        ReceivedMessage
+            SentBy= TOTVSMessageResponseMessageReceivedMessageSentBy
+            UUID= TOTVSMessageResponseMessageReceivedMessageUUID
+            MessageContent= '<![CDATA[' + TOTVSMessageResponseMessageReceivedMessageMessageContent + ']]>'
+        ProcessingInformation
+            ProcessedOn= TOTVSMessageResponseMessageProcessingInformationProcessedOn
+            Status= TOTVSMessageResponseMessageProcessingInformationStatus
+        ReturnContent
+            block listOf

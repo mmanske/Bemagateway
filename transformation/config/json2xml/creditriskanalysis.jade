@@ -1,0 +1,6 @@
+extends genericTransaction
+
+block listOf
+            ListOfCustomerInternalId
+                each ProcessedInvoice in TOTVSMessageResponseMessageReturnContentListOfCustomerInternalId
+                    CustomerInternalId= CustomerInternalId

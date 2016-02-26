@@ -1,0 +1,60 @@
+{
+  "TOTVSMessage": {
+    "MessageInformation": {
+      "version": "11.08",
+      "UUID": "f576146e-9338-4e3a-a6fc-ac2f38ba29ce",
+      "Type": "BusinessMessage",
+      "Transaction": "REDUCTION",
+      "StandardVersion": "1.000",
+      "SourceApplication": "VHF",
+      "CompanyId": "1",
+      "BranchId": "4",
+      "Product": {
+        "name": "BEMATECH",
+        "version": "1.0"
+      },
+      "GeneratedOn": "2016-01-11T16:24:34",
+      "DeliveryType": "Sync"
+    },
+    "BusinessMessage": {
+      "BusinessEvent": {
+        "Entity": "Reduction",
+        "Event": "upsert",
+        "Identification": {
+          "Key": {
+            "name": "InternalId",
+            "content": "RZ|243|464f5789-a2aa-404d-9adc-a58a00e41cf3"
+          }
+        }
+      },
+      "BusinessContent": {
+        "InternalId": "RZ|243|464f5789-a2aa-404d-9adc-a58a00e41cf3",
+        "MovementDate": "2016-01-11",
+        "IssueDateReduction": "2016-01-11T13:50:32",
+        "StationCode": "243",
+        "ReductionCode": 14,
+        "CounterCode": 117,
+        "CounterReset": 0,
+        "InitialCounter": 116,
+        "FinalCounter": 0,
+        "InitialValue": 1436.13,
+        "FinalValue": 1470.23,
+        "ValueCancellations": 0.00,
+        "DiscountValue": 0.00,
+        "SalesValueNet": 34.10,
+        "TaxReplacementValue": 5.50,
+        "FreeValue": 0.00,
+        "UntaxedValue": 0.00,
+        "ValueOfOthersReceivables": 0.0,
+        "AmountOfTaxDue": 28.60,
+        "IssValue": 0.00,
+        "ListOfAliquot": [
+          {
+            "AliquotCode": 18.00,
+            "AliquotBase": 28.60
+          }
+        ]
+      }
+    }
+  }
+}

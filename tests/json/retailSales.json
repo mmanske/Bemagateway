@@ -1,0 +1,96 @@
+{
+  "TOTVSMessage": {
+    "BusinessMessage": {
+      "BusinessContent": {
+        "BranchId": "4",
+        "Change": 0.0,
+        "CompanyId": "1",
+        "CustomerVendorInternalId": "",
+        "DiscountPercent": 28.57,
+        "DiscountValue": 2.0,
+        "DocumentCode": "000162",
+        "GrossPrice": 7.0,
+        "IncreaseValue": 0.0,
+        "SerieCode": "999",
+        "InternalId": "VENDA|933|6|88315",
+        "IssueDateDocument": "2016-02-26T10:00:07",
+        "KeyAcessNFe": "33160282373077000171658890000001621000001625",
+        "ListOfSaleCondition": [
+          {
+            "DateOfPayment": "2016-02-26",
+            "EftAutorization": null,
+            "EftDate": null,
+            "FinancialManagerCode": null,
+            "PaymentMethodCode": "R$",
+            "PaymentValue": 5.0,
+            "UniqueSerialNumber": null
+          }
+        ],
+        "ListOfSaleItem": [
+          {
+            "DiscountAmount": 0.0,
+            "DiscountPercentage": 0.0,
+            "Increase": 0.0,
+            "ItemInternalId": "429|1|4|580",
+            "ItemOrder": 1,
+            "ItemPrice": 7.0,
+            "ListOfTaxes": [
+              {
+                "Taxe": "ICM",
+                "Value": 0.49
+              }
+            ],
+            "OperationCode": "5102",
+            "Quantity": 1.0,
+            "UnitPrice": 7.0
+          }
+        ],
+        "ListOfTaxes": [
+          {
+            "Taxe": "ICM",
+            "Value": 0.49
+          },
+          {
+            "Taxe": "ICM",
+            "Value": 0.50
+          },
+          {
+            "Taxe": "ICM",
+            "Value": 0.55
+          }
+        ],
+        "NetPrice": 5.0,
+        "OperatorCode": "C02",
+        "PersonalIdentification": "",
+        "StationCode": "6",
+        "TotalPrice": 7.0
+      },
+      "BusinessEvent": {
+        "Entity": "RETAILSALES",
+        "Event": "upsert",
+        "Identification": {
+          "Key": {
+            "content": "VENDA|933|6|88315",
+            "name": "InternalId"
+          }
+        }
+      }
+    },
+    "MessageInformation": {
+      "BranchId": "4",
+      "CompanyId": "1",
+      "DeliveryType": "sync",
+      "GeneratedOn": "2016-02-26T10:00:16",
+      "Product": {
+        "name": "BEMATECH",
+        "version": "1.3.0.17"
+      },
+      "SourceApplication": "Bematech PDV Hospitality",
+      "StandardVersion": "1.000",
+      "Transaction": "RETAILSALES",
+      "Type": "BusinessMessage",
+      "UUID": "5c26735e-3c72-48e8-ab1d-f0bef2cfb384",
+      "version": "1.000"
+    }
+  }
+}

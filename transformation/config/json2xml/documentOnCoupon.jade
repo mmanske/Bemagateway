@@ -1,0 +1,14 @@
+extends layout
+
+block content
+    BusinessMessage
+        BusinessRequest
+            Operation= TOTVSMessageBusinessMessageBusinessRequestOperation
+        BusinessContent
+            InternalId= TOTVSMessageBusinessMessageBusinessContentInternalId
+            CustomerVendorInternalId= TOTVSMessageBusinessMessageBusinessContentCustomerVendorInternalId
+            CompanyInternalId= TOTVSMessageBusinessMessageBusinessContentCompanyInternalId
+            ListOfRetailSales
+                each ListOfRetailSales in TOTVSMessageBusinessMessageBusinessContentListOfRetailSales
+                    RetailSales
+                        RetailSalesInternalId= ListOfRetailSales.RetailSalesInternalId

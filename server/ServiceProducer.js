@@ -101,9 +101,18 @@ var ServiceProducer = function(queueName) {
                             sendResponse(obj);
                         }
                     } else {
-                        var data = transform.fromJSON2XML(mapping.transformationToJSON, result);
-                        var obj =  {data: data, requestID: request.request_id, status: status};
-                        sendResponse(obj);
+                        //var data = transform.fromXML2JSON(mapping.transformationToJSON, result);
+                        transform.fromXML2JSON(mapping.transformationToJSON, result, function(err, data) {
+                            var obj =  {};
+                            if (err) {
+                                obj =  {data: err, requestID: request.request_id, status: status};
+                            } else {
+                                var obj =  {data: data, requestID: request.request_id, status: status};
+                            }
+
+                            sendResponse(obj);
+                        });
+
                     }
                 });
              } else {
@@ -118,8 +127,9 @@ var ServiceProducer = function(queueName) {
                 }
 
                 var convertToJSON = function(xmlData, callbackJSON) {
-                    var json = transform.fromXML2JSON(operation.transformationToJSON, xmlData);
-                    callbackJSON(null, json);
+                    //var json = transform.fromXML2JSON(operation.transformationToJSON, xmlData);
+                    transform.fromXML2JSON(operation.transformationToJSON, xmlData, callbackJSON);
+                    //callbackJSON(null, json);
                 };
 
                 restConsumer.execute(mapping, operationName, params,convertToJSON, function(err, result) {

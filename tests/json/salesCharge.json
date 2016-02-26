@@ -1,0 +1,45 @@
+{
+  "TOTVSMessage": {
+    "BusinessMessage": {
+      "BusinessContent": {
+        "BaseValue": "91",
+        "BranchId": "04",
+        "CompanyId": "01",
+        "CompanyInternalId": "01|04",
+        "Currency": "01",
+        "DueDate": "2004-04-07",
+        "InternalId": "010435310",
+        "IssueDate": "2004-03-18",
+        "SalesChargePercentage": "10",
+        "SellerInternalId": "0104VEND353",
+        "Value": "9,1"
+      },
+      "BusinessEvent": {
+        "Entity": "SALESCHARGE",
+        "Event": "upsert",
+        "Identification": {
+          "Key": {
+            "content": "010435310",
+            "name": "InternalId"
+          }
+        }
+      }
+    },
+    "MessageInformation": {
+      "BranchId": "4",
+      "CompanyId": "1",
+      "DeliveryType": "Async",
+      "GeneratedOn": "2016-02-11T517:52:34",
+      "Product": {
+        "name": "BEMATECH",
+        "version": "1.000"
+      },
+      "SourceApplication": "FATURA",
+      "StandardVersion": "1.000",
+      "Transaction": "SALESCHARGE",
+      "Type": "BusinessMessage",
+      "UUID": "8957D037-0A5D-4211-8BAB-81C0006B2584",
+      "version": "1.000"
+    }
+  }
+}
