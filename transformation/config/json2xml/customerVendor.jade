@@ -1,0 +1,43 @@
+extends layout
+
+block content
+    BusinessMessage
+        BusinessEvent
+            Entity= TOTVSMessageBusinessMessageBusinessEventEntity
+            Event= TOTVSMessageBusinessMessageBusinessEventEvent
+            Identification
+                Key(name= TOTVSMessageBusinessMessageBusinessEventIdentificationKeyname)= TOTVSMessageBusinessMessageBusinessEventIdentificationKeycontent
+        BusinessContent
+            CompanyId= TOTVSMessageBusinessMessageBusinessContentCompanyId
+            BranchId= TOTVSMessageBusinessMessageBusinessContentBranchId
+            CompanyInternalId= TOTVSMessageBusinessMessageBusinessContentCompanyInternalId
+            Code= TOTVSMessageBusinessMessageBusinessContentCode
+            StoreId= TOTVSMessageBusinessMessageBusinessContentStoreId
+            InternalId= TOTVSMessageBusinessMessageBusinessContentInternalId
+            ShortName= TOTVSMessageBusinessMessageBusinessContentShortName
+            Name= TOTVSMessageBusinessMessageBusinessContentName
+            StrategicCustomerType= TOTVSMessageBusinessMessageBusinessContentStrategicCustomerType
+            Type= TOTVSMessageBusinessMessageBusinessContentType
+            RegisterSituation= TOTVSMessageBusinessMessageBusinessContentRegisterSituation
+            GovernmentalInformation
+                Id(name=TOTVSMessageBusinessMessageBusinessContentGovernmentalInformationIdname, scope=TOTVSMessageBusinessMessageBusinessContentGovernmentalInformationIdscope)= TOTVSMessageBusinessMessageBusinessContentGovernmentalInformationIdcontent
+            EntityType= TOTVSMessageBusinessMessageBusinessContentEntityType
+            Address
+                Address= TOTVSMessageBusinessMessageBusinessContentAddressAddress
+                Number= TOTVSMessageBusinessMessageBusinessContentAddressNumber
+                Complement= TOTVSMessageBusinessMessageBusinessContentAddressComplement
+                District= TOTVSMessageBusinessMessageBusinessContentAddressDistrict
+                ZipCode= TOTVSMessageBusinessMessageBusinessContentAddressZipCode
+                POBox= TOTVSMessageBusinessMessageBusinessContentAddressPOBox
+                City
+                    CityCode= TOTVSMessageBusinessMessageBusinessContentAddressCityCityCode
+                    CityInternalId= TOTVSMessageBusinessMessageBusinessContentAddressCityCityInternalId
+                    CityDescription= TOTVSMessageBusinessMessageBusinessContentAddressCityCityDescription
+                State
+                    StateCode= TOTVSMessageBusinessMessageBusinessContentAddressStateStateCode
+                    StateInternalId= TOTVSMessageBusinessMessageBusinessContentAddressStateStateInternalId
+                    StateDescription= TOTVSMessageBusinessMessageBusinessContentAddressStateStateDescription
+
+                Country
+                    CountryCode= TOTVSMessageBusinessMessageBusinessContentAddressCountryCountryCode
+                    CountryInternalId= TOTVSMessageBusinessMessageBusinessContentAddressCountryCountryInternalId

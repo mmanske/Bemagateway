@@ -1,0 +1,101 @@
+{
+    "TOTVSMessage" : {
+      "MessageInformation" : {
+        "UUID" : "291E2506-47E3-4617-B3BE-4327D65347E5",
+        "Type" : "Response",
+        "Transaction" : "CREDITRISKANALYSIS",
+        "StandardVersion" : "1.000",
+        "SourceApplication" : "BEMATECH",
+        "CompanyId" : "99",
+        "BranchId" : "01",
+        "Product" : {
+          "version" : "1.000",
+          "name" : "BEMATECH"
+        },
+        "GeneratedOn" : "2016-02-17T14:47:36",
+        "DeliveryType" : "Sync"
+      },
+      "ResponseMessage" : {
+        "ReceivedMessage" : {
+          "SentBy" : "PROTHEUS",
+          "UUID" : "163de56e-df85-7cfa-5709-4343a20526f1",
+          "MessageContent" : {
+            "TOTVSMessage" : {
+              "MessageInformation" : {
+                "attributes" : {
+                  "version" : "1.000"
+                },
+                "UUID" : "163de56e-df85-7cfa-5709-4343a20526f1",
+                "Type" : "BusinessMessage",
+                "Transaction" : "CREDITRISKANALYSIS",
+                "StandardVersion" : "1.000",
+                "SourceApplication" : "P12B",
+                "CompanyId" : "99",
+                "BranchId" : "01",
+                "Product" : {
+                  "attributes" : {
+                    "name" : "PROTHEUS",
+                    "version" : "12"
+                  }
+                },
+                "GeneratedOn" : "2016-01-28T17:33:14",
+                "DeliveryType" : "Sync"
+              },
+              "BusinessMessage" : {
+                "BusinessEvent" : {
+                  "Entity" : "CreditRiskAnalysis",
+                  "Event" : "upsert",
+                  "Identification" : {
+                    "key" : [{
+                      "attributes" : {
+                        "name" : "CompanyID"
+                      },
+                      "content" : "99"
+                    }, {
+                      "attributes" : {
+                        "name" : "BranchId"
+                      },
+                      "content" : "01"
+                    }
+                    ]
+                  }
+                },
+                "BusinessContent" : {
+                  "CompanyId" : "99",
+                  "BranchId" : "01",
+                  "CompanyInternalId" : "99|01",
+                  "ListOfCreditRiskAnalysis" : {
+                    "CreditRiskAnalysis" : [{
+                      "CustomerInternalId" : "99||TST246|00|C",
+                      "Status" : "0",
+                      "CreditBalance" : "0.00"
+                    }, {
+                      "CustomerInternalId" : "99||TST247|00|C",
+                      "Status" : "0",
+                      "CreditBalance" : "0.00"
+                    }, {
+                      "CustomerInternalId" : "99||TST249|00|C",
+                      "Status" : "0",
+                      "CreditBalance" : "10.00"
+                    }, {
+                      "CustomerInternalId" : "99||TST248|00|C",
+                      "Status" : "0",
+                      "CreditBalance" : "8000.00"
+                    }
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        },
+        "ProcessingInformation" : {
+          "ProcessedOn" : "2016-02-17T14:47:36",
+          "Status" : "ok"
+        },
+        "ReturnContent" : {
+          "ListOfCustomerInternalId" : ["25|1|4|25626", "25|1|4|15306"]
+        }
+      }
+    }
+  }

@@ -1,0 +1,58 @@
+extends layout
+
+block content
+    BusinessMessage
+        BusinessEvent
+            Entity= TOTVSMessageBusinessMessageBusinessEventEntity
+            Event= TOTVSMessageBusinessMessageBusinessEventEvent
+            Identification
+                Key(name= TOTVSMessageBusinessMessageBusinessEventIdentificationKeyname)= TOTVSMessageBusinessMessageBusinessEventIdentificationKeycontent
+        BusinessContent
+            InternalId= TOTVSMessageBusinessMessageBusinessContentInternalId
+            CompanyId= TOTVSMessageBusinessMessageBusinessContentCompanyId
+            BranchId= TOTVSMessageBusinessMessageBusinessContentBranchId
+            DocumentCode= TOTVSMessageBusinessMessageBusinessContentDocumentCode
+            SerieCode= TOTVSMessageBusinessMessageBusinessContentSerieCode
+            CustomerVendorInternalId= TOTVSMessageBusinessMessageBusinessContentCustomerVendorInternalId
+            OperatorCode= TOTVSMessageBusinessMessageBusinessContentOperatorCode
+            StationCode= TOTVSMessageBusinessMessageBusinessContentStationCode
+            IssueDateDocument= TOTVSMessageBusinessMessageBusinessContentIssueDateDocument
+            PersonalIdentification= TOTVSMessageBusinessMessageBusinessContentPersonalIdentification
+            TotalPrice= TOTVSMessageBusinessMessageBusinessContentTotalPrice
+            GrossPrice= TOTVSMessageBusinessMessageBusinessContentGrossPrice
+            DiscountValue= TOTVSMessageBusinessMessageBusinessContentDiscountValue
+            DiscountPercent= TOTVSMessageBusinessMessageBusinessContentDiscountPercent
+            NetPrice= TOTVSMessageBusinessMessageBusinessContentNetPrice
+            IncreaseValue= TOTVSMessageBusinessMessageBusinessContentIncreaseValue
+            KeyAcessNFe= TOTVSMessageBusinessMessageBusinessContentKeyAcessNFe
+            Change= TOTVSMessageBusinessMessageBusinessContentChange
+            ListOfTaxes
+                each tax in TOTVSMessageBusinessMessageBusinessContentListOfTaxes
+                    Tax
+                        Taxe= tax.Taxe
+                        CalculationBasis= tax.CalculationBasis
+                        Value= tax.Value
+            ListOfSaleItem
+                each saleItem in TOTVSMessageBusinessMessageBusinessContentListOfSaleItem
+                    SaleItem
+                        ItemInternalId= saleItem.ItemInternalId
+                        ItemOrder= saleItem.ItemOrder
+                        OperationCode= saleItem.OperationCode
+                        Quantity= saleItem.Quantity
+                        UnitPrice= saleItem.UnitPrice
+                        ItemPrice= saleItem.ItemPrice
+                        DiscountPercentage= saleItem.DiscountPercentage
+                        DiscountAmount= saleItem.DiscountAmount
+                        Increase= saleItem.Increase
+                        ListOfTaxes
+                            each saleItemTaxes in saleItem.ListOfTaxes
+                                Tax
+                                    Taxe= saleItemTaxes.Taxe
+                                    CalculationBasis= saleItemTaxes.CalculationBasis
+                                    Value= saleItemTaxes.Value
+            ListOfSaleCondition
+                each SaleCondition in TOTVSMessageBusinessMessageBusinessContentListOfSaleCondition
+                    SaleCondition
+                        PaymentMethodCode= SaleCondition.PaymentMethodCode
+                        DateOfPayment= SaleCondition.DateOfPayment
+                        PaymentValue= SaleCondition.PaymentValue

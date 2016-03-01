@@ -1,0 +1,57 @@
+{
+  "TOTVSMessage": {
+    "MessageInformation": {
+      "version": "3.003",
+      "UUID": "4050C1EC-5006-47EB-ABAF-E00F688A5DF7",
+      "Type": "BusinessMessage",
+      "Transaction": "ITEM",
+      "StandardVersion": "1.000",
+      "SourceApplication": "PDV",
+      "CompanyId": "1",
+      "BranchId": "4",
+      "GeneratedOn": "2016-02-25T11:39:59",
+      "DeliveryType": "Sync",
+      "Product": {
+        "version": "1.000",
+        "name": "BEMATECH"
+      }
+    },
+    "BusinessMessage": {
+      "BusinessEvent": {
+        "Entity": "ITEM",
+        "Event": "upsert",
+        "Identification": {
+          "Key": {
+            "name": "InternalId",
+            "content": "429|1|4|095412"
+          }
+        }
+      },
+      "BusinessContent": {
+        "Code": "42914095412",
+        "Name": "milho 5",
+        "StockGroupCode": "",
+        "ProductType": "10",
+        "UnitOfMeasureCode": "CM",
+        "StandardWarehouseDescription": "01",
+        "CompanyId": "1",
+        "BranchId": "4",
+        "InternalId": "429|1|4|095412",
+        "Active": "1",
+        "ShortName": "milho 5",
+        "ListOfGenericPrices": [
+          {
+              "PriceId": "1",
+              "Price": "0"
+          }
+        ],
+        "Values": {
+          "CostPrice": "0",
+          "SalesPrice": "0",
+          "AverageCostPrice": "1",
+          "StandardCostPrice": "0"
+        }
+      }
+    }
+  }
+}

@@ -1,7 +1,7 @@
 {
   "host": "localhost",
-  "name": "bemagateway",
-  "user": "bematech",
-  "password": "bematech",
+  "name": "bematech",
+  "user": "postgres",
+  "password": "postgres",
   "port": "5432"
 }

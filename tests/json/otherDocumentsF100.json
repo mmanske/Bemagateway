@@ -1,0 +1,68 @@
+{
+  "TOTVSMessage": {
+    "MessageInformation": {
+      "version": "1.000",
+      "UUID": "0197A277-03AF-4FDA-8C0D-C92F53AC1BAE",
+      "Type": "BusinessMessage",
+      "Transaction": "OTHERDOCUMENTSF100",
+      "StandardVersion": "1.000",
+      "SourceApplication": "VHF",
+      "CompanyId": "1",
+      "BranchId": "4",
+      "GeneratedOn": "2016-02-16T516:36:43",
+      "DeliveryType": "Sync",
+      "Product": {
+        "version": "1.000",
+        "name": "BEMATECH"
+      }
+    },
+    "BusinessMessage": {
+      "BusinessEvent": {
+        "Entity": "OTHERDOCUMENTSF100",
+        "Event": "upsert",
+        "Identification": {
+          "Key": {
+            "name": "InternalId",
+            "content": "25|1|4|405278"
+          }
+        }
+      },
+      "BusinessContent": {
+        "CompanyId": "1",
+        "BranchId": "4",
+        "CompanyInternalId": "",
+        "InternalId": "25|1|4|405278",
+        "Code": "405278",
+        "OperIndicator": "1",
+        "Regime": "1",
+        "OperDate": "2015-09-14",
+        "PisTax": "01",
+        "CofinsTax": "01",
+        "CustomerVendorInternalId": "",
+        "CustomerVendorCode": "",
+        "ItemInternalId": "VHF4-7",
+        "ItemCode": "",
+        "OperValue": "1",
+        "Balance": "",
+        "PisBase": "0",
+        "PisAliquot": "0",
+        "PisValue": "0",
+        "CofinsBase": "1",
+        "CofinsAliquot": "3",
+        "CofinsValue": "0.03",
+        "BCCode": "",
+        "CredOrigin": "",
+        "LedgerAccountInternalId": "",
+        "LedgerAccount": "",
+        "CostCenterInternalId": "",
+        "CostCenterCode": "",
+        "OperDescription": "Referente ‡ conta n∫ 75124 (VHF4-7 - DIARIA)",
+        "ClTable": "",
+        "Calculate": "",
+        "EfdProject": "",
+        "GrossIncome": "1",
+        "Participator": ""
+      }
+    }
+  }
+}

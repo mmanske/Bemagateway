@@ -1,0 +1,33 @@
+{
+  "TOTVSMessage" : {
+    "MessageInformation" : {
+      "version" : "1.000",
+      "UUID" : "d3653405-875e-4afb-9174-59b402aec758",
+      "Type" : "BusinessMessage",
+      "Transaction" : "RETAILSALESCANCELLATION",
+      "StandardVersion" : "1.000",
+      "SourceApplication" : "Bematech PDV Hospitality",
+      "CompanyId" : "1",
+      "BranchId" : "4",
+      "Product" : {
+        "name" : "BEMATECH",
+        "version" : "1.3.0.10"
+      },
+      "GeneratedOn" : "2016-02-04T11:31:11",
+      "DeliveryType" : "sync"
+    },
+    "BusinessMessage" : {
+      "BusinessRequest" : {
+        "Operation" : "RetailSalesCancellation"
+      },
+      "BusinessContent" : {
+        "InternalId" : "CANC|933|6|88271",
+        "CompanyId" : "1",
+        "BranchId" : "4",
+        "RetailSalesInternalId" : "VENDA|933|6|88271",
+        "OperatorCode" : "155",
+        "CancelDate" : "2016-02-04T10:49:27"
+      }
+    }
+  }
+}

@@ -1,0 +1,9 @@
+BusinessMessage
+    BusinessEvent
+        Entity= businessEventEntity
+        Event= businessEventEvent
+        Identification
+            Key(name= businessEventKeyName)= businessEventKey
+        BusinessContent
+            if (businessContentCompanyId)
+                CompanyId= businessContentCompanyId.teste

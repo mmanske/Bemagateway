@@ -1,0 +1,75 @@
+{
+  "TOTVSMessage": {
+    "BusinessMessage": {
+      "BusinessContent": {
+        "Address": {
+          "Address": "ALAMEDA SANTOS",
+          "Number": "",
+          "Complement": "7 ANDAR",
+          "District": "CERQUEIRA CESAR",
+          "ZipCode": "01419002",
+          "POBox": "",
+          "City": {
+            "CityCode": "50308",
+            "CityDescription": "SAO PAULO",
+            "CityInternalId": ""
+          },
+          "State": {
+            "StateCode": "SP",
+            "StateDescription": "SAO PAULO",
+            "StateInternalId": ""
+          },
+          "Country": {
+            "CountryCode": "105",
+            "CountryInternalId": "BR"
+          }
+        },
+        "BranchId": "4",
+        "Code": "",
+        "CompanyId": "1",
+        "CompanyInternalId": "",
+        "EntityType": "Company",
+        "GovernmentalInformation": {
+          "Id": {
+            "name": "CNPJ",
+            "scope": "FEDERAL",
+            "content": "01373743000170"
+          }
+        },
+        "InternalId": "914",
+        "Name": "BTI BRASIL BUSINESS ",
+        "RegisterSituation": "Active",
+        "ShortName": "BTI BRASIL",
+        "StoreId": "",
+        "StrategicCustomerType": "1",
+        "Type": "Customer"
+      },
+      "BusinessEvent": {
+        "Entity": "CUSTOMERVENDOR",
+        "Event": "upsert",
+        "Identification": {
+          "Key": {
+            "content": "",
+            "name": "InternalId"
+          }
+        }
+      }
+    },
+    "MessageInformation": {
+      "BranchId": "4",
+      "CompanyId": "1",
+      "DeliveryType": "Sync",
+      "GeneratedOn": "2016-01-05T509:40:07",
+      "Product": {
+        "name": "BEMATECH",
+        "version": "1.0"
+      },
+      "SourceApplication": "VHF",
+      "StandardVersion": "1.000",
+      "Transaction": "CUSTOMERVENDOR",
+      "Type": "BusinessMessage",
+      "UUID": "D9F6726C-3ED1-4A65-8FCA-E31F84403AFE",
+      "version": "2.004"
+    }
+  }
+}

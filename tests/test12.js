@@ -3,17 +3,17 @@
  */
 
 
-var TransformJSON2XML = require("../transformation/TransformJSON2XML");
+var Transform = require("../transformation/Transform");
 var fs = require('fs');
 
-var baseDir = __dirname + "/../transformation/config/json2xml";
+var baseDir = __dirname + "/../transformation/config/jade";
 
-var transform = new TransformJSON2XML(baseDir);
+var transform = new Transform(null, baseDir);
 
 var jsonText = fs.readFileSync("./seller.json", "utf8");
 
 var jsonObj = JSON.parse(jsonText);
 
-var xml = transform.fromJSON2XML("seller_config.json", jsonObj);
+var xml = transform.fromJSON2XML("seller.jade", jsonObj);
 
 console.log(xml);

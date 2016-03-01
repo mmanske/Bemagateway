@@ -1,0 +1,31 @@
+{
+  "TOTVSMessage": {
+    "BusinessMessage": {
+      "BusinessContent": {
+        "BranchId": "04",
+        "CompanyId": "01",
+        "CompanyInternalId": "01|04",
+        "HotelInvoiceInternalId": "0104123306C1973"
+      },
+      "BusinessRequest": {
+        "Operation": "HOTELINVOICECANCELLATION"
+      }
+    },
+    "MessageInformation": {
+      "BranchId": "4",
+      "CompanyId": "1",
+      "DeliveryType": "Async",
+      "GeneratedOn": "2016-02-11T518:01:10",
+      "Product": {
+        "name": "BEMATECH",
+        "version": "1.000"
+      },
+      "SourceApplication": "FATURA",
+      "StandardVersion": "1.000",
+      "Transaction": "HOTELINVOICECANCELLATION",
+      "Type": "BusinessMessage",
+      "UUID": "C31E4034-F974-4BF3-B510-56E945FCDF18",
+      "version": "1.000"
+    }
+  }
+}
